@@ -53,16 +53,16 @@ architecture arch_name of Unidade_Controle is
 --
   begin
 --  
-  selMuxJump <= '1' when (zero = '1' and opCode = JE) or (negativo = '1' and opCode = JL) or opCode = JMP else '0' ;
-  selMuxULAImed <= '0' when opCode = MOVC else '0';
-  selMuxImedRAM <= '1' when opCode = MOVC else '0';
-  HabEscritaReg <= '1' when opCode = MOVC or opCode = LOAD else '0';
-  
-  selOperacaoULA <= "001" when opCode = CMP else "000";
-  habLeituraMEM <= '1' when opCode = LOAD else '0';
-  habEscritaMEM <= '1' when opCode = STORE else '0';
-  rstZ <= '0'when opCode = CMP or  opCode = JE or opCode = JL else '1';
-  rstN <= '0'when opCode = CMP or  opCode = JE or opCode = JL else '1';
+--  selMuxJump <= '1' when (zero = '1' and opCode = JE) or (negativo = '1' and opCode = JL) or opCode = JMP else '0' ;
+--  selMuxULAImed <= '0' when opCode = MOVC else '0';
+--  selMuxImedRAM <= '1' when opCode = MOVC else '0';
+--  HabEscritaReg <= '1' when opCode = MOVC or opCode = LOAD else '0';
+--  
+--  selOperacaoULA <= "001" when opCode = CMP else "000";
+--  habLeituraMEM <= '1' when opCode = LOAD else '0';
+--  habEscritaMEM <= '1' when opCode = STORE else '0';
+--  rstZ <= '0'when opCode = CMP or  opCode = JE or opCode = JL else '1';
+--  rstN <= '0'when opCode = CMP or  opCode = JE or opCode = JL else '1';
 
   
   -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
@@ -72,18 +72,18 @@ architecture arch_name of Unidade_Controle is
   -- CMP "1111"
 					 
 					 
---	 palavraControle<= "11010100000" when opCode = "0001" else 			--  add
---				    "11010100100" when opCode =  "0010" else 				--  sub
---					 "11011101000" when opCode = "0011" else					--  movr
---					 "11001100000" when opCode = "0100" else 					--  movc
---					 "11000000001" when opCode = "0101" else 					--  store
---					 "11000100010" when opCode = "0110" else 					--  load
-----					 "11000000000" when opCode = "0111" else 					--  div		
---					 "11100000000" when opCode =  JMP   else 					--  jump		
---					 "01100000000" when opCode = "1001" AND zero = '1' else 		--  je		
---					 "10100000000" when opCode = "1010" AND negativo = '1' else --  jl	 
---					 "00010000100" when opCode = "1011" else 					--  cmp
---					 "11000000000";
+	 palavraControle<= "11010100000" when opCode = "0001" else 			--  add
+				    "11010100100" when opCode =  "0010" else 				--  sub
+					 "11011101000" when opCode = "0011" else					--  movr
+					 "11001100000" when opCode = "0100" else 					--  movc
+					 "11000000001" when opCode = "0101" else 					--  store
+					 "11000100010" when opCode = "0110" else 					--  load
+--					 "11000000000" when opCode = "0111" else 					--  div		
+					 "11100000000" when opCode =  JMP   else 					--  jump		
+					 "01100000000" when opCode = "1001" AND zero = '1' else 		--  je		
+					 "10100000000" when opCode = "1010" AND negativo = '1' else --  jl	 
+					 "00010000100" when opCode = "1011" else 					--  cmp
+					 "11000000000";
 
 
 

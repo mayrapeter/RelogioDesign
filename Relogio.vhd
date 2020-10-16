@@ -34,6 +34,7 @@ begin
   interfaceBaseTempo : entity work.divisorGenerico_e_Interface
 						port map (clk => CLOCK_50,
 						habilitaLeitura => r,
+						habilita => habilita(6),
 						limpaLeitura => w,
 						leituraUmSegundo => dataIn);
 						
