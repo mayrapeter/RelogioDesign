@@ -33,16 +33,16 @@ architecture arch_name of Unidade_Controle is
   
  constant ADD : std_logic_vector(3 downto 0) := "0001";
 
-  constant SUB : std_logic_vector(3 downto 0) := "0010";
+ constant SUB : std_logic_vector(3 downto 0) := "0010";
  constant MOVR : std_logic_vector(3 downto 0) := "0011";
 
-  constant MOVC : std_logic_vector(3 downto 0) := "0100";
+ constant MOVC : std_logic_vector(3 downto 0) := "0100";
 
-   constant STORE : std_logic_vector(3 downto 0) := "0101";
+ constant STORE : std_logic_vector(3 downto 0) := "0101";
 
-	 constant LOAD : std_logic_vector(3 downto 0) := "0110";
+ constant LOAD : std_logic_vector(3 downto 0) := "0110";
 
-	  constant DIV : std_logic_vector(3 downto 0) := "0111";
+ constant DIV : std_logic_vector(3 downto 0) := "0111";
  constant JMP : std_logic_vector(3 downto 0) := "1000";
  
 	   constant JE : std_logic_vector(3 downto 0) := "1001";
