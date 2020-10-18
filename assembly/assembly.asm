@@ -5,7 +5,6 @@ MOVC REG_DM $0
 MOVC REG_UH $0
 MOVC REG_DH $0
 linha_while:
-LOAD REG_14 SW0
 MOVC REG_V1 $1
 LOAD REG_8 CLEAR_TEMPO
 CMP REG_8 REG_V1
@@ -77,4 +76,4 @@ STORE REG_UH LCD_UH
 STORE REG_DH LCD_DH
 MOVC REG_14 $0
 STORE REG_14 CLEAR_TEMPO
-JMP linha_while                                                                                  
+JMP linha_while              

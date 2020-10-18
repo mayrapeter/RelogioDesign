@@ -11,7 +11,8 @@ entity Relogio is
   port   (
     -- Input ports
     CLOCK_50  : in  std_logic;
-	 SW        : IN std_logic_vector(7 DOWNTO 0);
+	 SW        : in std_logic_vector(7 downto 0);
+	 KEY		  : in std_logic_vector(3 downto 0);
 
     -- Output ports
 	 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5		:	out  std_logic_vector(6 downto 0)
@@ -24,6 +25,7 @@ architecture arch_name of Relogio is
 	signal address 	: std_logic_vector(9 downto 0);
 	signal habilita	: std_logic_vector(7 downto 0);
 	signal habilitaSW	: std_logic_vector(7 downto 0);
+	signal habilitaBotao	: std_logic_vector(3 downto 0);
 	signal dataOut, dataIn : std_logic_vector(7 downto 0);
 begin
   clk <= CLOCK_50;
@@ -47,7 +49,7 @@ begin
 						
 	
   decodificador: entity work.Decoder
-						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW);
+						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW, habilitaBotao => habilitaBotao);
 	
   display0 :  entity work.conversorHex7Seg
 						port map(dadoHex => dataOut(3 downto 0),
@@ -87,12 +89,20 @@ begin
                  saida7seg => HEX5);
 					  
   -- chaves
-  entradaChaves : ENTITY work.interface_chaves
-    PORT MAP(
-      entrada  => SW(DATA_WIDTH - 1 DOWNTO 0),
+  entradaChaves : entity work.interface_chaves
+    port map(
+      entrada  => SW(DATA_WIDTH - 1 downto 0),
       saida    => dataIn,
       habilita => habilitaSW
-    );		  
+    );
+	 
+  entradaBotoes : entity work.interface_botoes
+    port map(
+      entrada  => KEY(3 downto 0),
+      saida    => dataIn,
+      habilita => habilitaBotao
+    );
+	 
 					  
 
 end architecture;

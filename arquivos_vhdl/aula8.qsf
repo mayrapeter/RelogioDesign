@@ -148,4 +148,5 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_global_assignment -name VHDL_FILE interface_chaves.vhd
 set_global_assignment -name VHDL_FILE mux.vhd
+set_global_assignment -name VHDL_FILE interface_botoes.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
