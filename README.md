@@ -15,7 +15,7 @@ Um relógio feito em assembly e VHDL.
 a mais devagar. 
 -**SW1**: Essa chave permite pausar o relógio, assim é possível acertar o horário. Quando ela está acionada (valor 1), o relógio pausa, caso contrário ele continua funcionando.
 
-##Fluxo de Dados:
+### Fluxo de Dados:
 ![foto](./fluxo.png)
 ### Requisitos:
 
