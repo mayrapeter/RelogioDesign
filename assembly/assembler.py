@@ -116,6 +116,7 @@ reg_address_dict = {
 #dicionario de enderecos no decoder
 mem_address_dict = {
 	'CLEAR_TEMPO': '0000000110',
+	'SW0':		   '0000000111',
 	'LCD_US':      '0000000000',
 	'LCD_DS':      '0000000001',
 	'LCD_UM':      '0000000010',

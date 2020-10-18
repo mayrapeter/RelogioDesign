@@ -1,5 +1,5 @@
 Restore Archived Project report for aula8
-Sat Oct 17 17:17:20 2020
+Sat Oct 17 18:29:32 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------+
 ; Restore Archived Project Summary                                        ;
 +---------------------------------+---------------------------------------+
-; Restore Archived Project Status ; Successful - Sat Oct 17 17:17:20 2020 ;
+; Restore Archived Project Status ; Successful - Sat Oct 17 18:29:32 2020 ;
 ; Revision Name                   ; aula8                                 ;
 ; Top-level Entity Name           ; Relogio                               ;
 ; Family                          ; Cyclone V                             ;
@@ -47,18 +47,25 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------+
 ; Restore Archived Project Messages ;
 +-----------------------------------+
-Info: Successfully restored 'C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.qar' into the 'C:\\Users\\Mayra Peter\\Documents\\6 SEMESTRE\\Design\\RelogioDesign\\arquivos_vhdl/' directory
+Info: Successfully restored 'C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.qar' into the 'C:\\Users\\giova\\OneDrive\\Documentos\\Insper\\6_semestre\\DesignComp\\RelogioDesign\\arquivos_vhdl/' directory
 Info: Generated report 'aula8.restore.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
-Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4734 megabytes
-    Info: Processing ended: Sat Oct 17 17:17:20 2020
-    Info: Elapsed time: 00:00:01
+Info: Quartus Prime Shell was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4816 megabytes
+    Info: Processing ended: Sat Oct 17 18:29:32 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
 +---------------------------------+
-; Files Restored                  ;
+; Files Not Restored              ;
 +---------------------------------+
 ; File Name                       ;
 +---------------------------------+
@@ -88,12 +95,5 @@ Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
 ; somaConstante.vhd               ;
 ; assignment_defaults.qdf         ;
 +---------------------------------+
-
-
-+--------------------+
-; Files Not Restored ;
-+--------------------+
-; File Name          ;
-+--------------------+
 
 

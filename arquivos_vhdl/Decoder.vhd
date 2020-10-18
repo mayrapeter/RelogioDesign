@@ -10,7 +10,8 @@ entity Decoder is
     clk     : in  std_logic;
 
     -- Output ports
-    habilita :  out  std_logic_vector(7 downto 0)
+    habilita :  out  std_logic_vector(7 downto 0);
+	 habilitaSW: out  std_logic_vector(7 downto 0)
   );
 end entity;
 
@@ -27,5 +28,9 @@ begin
 				  "00100000" when Imediato = "0000000101" else -- display 5
 				  "01000000" when Imediato = "0000000110" else -- base de tempo
 				  "00000000";
+				  
+	habilitaSW<= "00000001" when Imediato = "0000000111" else	-- SW0
+					 "00000010" when Imediato = "0000001000" else   -- SW1
+					 "00000000";
 
 end architecture;

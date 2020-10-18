@@ -11,9 +11,9 @@ entity Relogio is
   port   (
     -- Input ports
     CLOCK_50  : in  std_logic;
+	 SW        : IN std_logic_vector(7 DOWNTO 0);
+
     -- Output ports
-    programCounter   :  out  std_logic_vector(ADDR_WIDTH-1 downto 0);
-	 LEDR					:	out  std_logic_vector(ADDR_WIDTH-1 downto 0);
 	 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5		:	out  std_logic_vector(6 downto 0)
   );
 end entity;
@@ -23,12 +23,14 @@ architecture arch_name of Relogio is
 	signal clk, w, r 	: std_logic;
 	signal address 	: std_logic_vector(9 downto 0);
 	signal habilita	: std_logic_vector(7 downto 0);
+	signal habilitaSW	: std_logic_vector(7 downto 0);
 	signal dataOut, dataIn : std_logic_vector(7 downto 0);
 begin
   clk <= CLOCK_50;
+  
   -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
   CPU				:  entity work.Processador generic map (DATA_WIDTH => DATA_WIDTH, ADDR_WIDTH => ADDR_WIDTH)
-						port map (programCounter(6 downto 0) => ledR(6 downto 0), saidaRegistrador => dataOut, dataIn => dataIn, clk => clk, address => address, w => w, r => r);
+						port map (saidaRegistrador => dataOut, dataIn => dataIn, clk => clk, address => address, w => w, r => r);
   
 						
   interfaceBaseTempo : entity work.divisorGenerico_e_Interface
@@ -36,16 +38,16 @@ begin
 						habilitaLeitura => r,
 						habilita => habilita(6),
 						limpaLeitura => w,
+						selBaseTempo => SW(0),
 						leituraUmSegundo => dataIn);
 						
-  ledR(9) <= dataIn(0);
 	
 --  testeT: entity work.divisorGenerico
 --						port map (clk => CLOCK_50, saida_clk => clk);
 						
 	
   decodificador: entity work.Decoder
-						port map (Imediato => address, clk => clk, habilita => habilita);
+						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW);
 	
   display0 :  entity work.conversorHex7Seg
 						port map(dadoHex => dataOut(3 downto 0),
@@ -83,5 +85,14 @@ begin
 					  clk => clk,
 					  w => w,
                  saida7seg => HEX5);
+					  
+  -- chaves
+  entradaChaves : ENTITY work.interface_chaves
+    PORT MAP(
+      entrada  => SW(DATA_WIDTH - 1 DOWNTO 0),
+      saida    => dataIn,
+      habilita => habilitaSW
+    );		  
+					  
 
 end architecture;
