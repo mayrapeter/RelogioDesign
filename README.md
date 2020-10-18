@@ -13,7 +13,7 @@ Um relógio feito em assembly e VHDL.
 ### Funcionamento:
 - **SW0**: Essa chave permite a escolha da base de tempo. Quando ela está acionada (valor 1), a base de tempo escolhida é a mais rápida, e quando o valor está 0, a base é 
 a mais devagar. 
--**SW1**: Essa chave permite pausar o relógio, assim é possível acertar o horário. Quando ela está acionada (valor 1), o relógio pausa, caso contrário ele continua funcionando.
+- **SW1**: Essa chave permite pausar o relógio, assim é possível acertar o horário. Quando ela está acionada (valor 1), o relógio pausa, caso contrário ele continua funcionando.
 
 ### Fluxo de Dados:
 ![foto](./fluxo.png)
