@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aula8
-Sun Oct 18 16:48:57 2020
+Sun Oct 18 21:08:19 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -31,16 +31,15 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  23. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo1seg
  24. Parameter Settings for User Entity Instance: divisorGenerico_e_Interface:interfaceBaseTempo|mux:muxBaseTempo
  25. Parameter Settings for User Entity Instance: interface_chaves:entradaChaves
- 26. Parameter Settings for User Entity Instance: interface_botoes:entradaBotoes
- 27. Port Connectivity Checks: "Decoder:decodificador"
- 28. Port Connectivity Checks: "divisorGenerico_e_Interface:interfaceBaseTempo|flipflop:registraUmSegundo"
- 29. Port Connectivity Checks: "Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopN"
- 30. Port Connectivity Checks: "Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ"
- 31. Port Connectivity Checks: "Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC"
- 32. Port Connectivity Checks: "Processador:CPU"
- 33. Post-Synthesis Netlist Statistics for Top Partition
- 34. Elapsed Time Per Partition
- 35. Analysis & Synthesis Messages
+ 26. Port Connectivity Checks: "Decoder:decodificador"
+ 27. Port Connectivity Checks: "divisorGenerico_e_Interface:interfaceBaseTempo|flipflop:registraUmSegundo"
+ 28. Port Connectivity Checks: "Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopN"
+ 29. Port Connectivity Checks: "Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ"
+ 30. Port Connectivity Checks: "Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC"
+ 31. Port Connectivity Checks: "Processador:CPU"
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
 
 
 
@@ -67,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 18 16:48:57 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sun Oct 18 21:08:19 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula8                                       ;
 ; Top-level Entity Name           ; Relogio                                     ;
@@ -181,43 +180,41 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
-; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd              ;         ;
-; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/somaConstante.vhd               ;         ;
-; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/memoriaROM.vhd                  ;         ;
-; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/registradorGenerico.vhd         ;         ;
-; ULA.vhdl                         ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/ULA.vhdl                        ;         ;
-; bancoRegistradoresArqRegReg.vhd  ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd ;         ;
-; Unidade_Controle.vhd             ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Unidade_Controle.vhd            ;         ;
-; Processador.vhd                  ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Processador.vhd                 ;         ;
-; Fluxo_Dados.vhd                  ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd                 ;         ;
-; Relogio.vhd                      ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd                     ;         ;
-; flipflop.vhd                     ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/flipflop.vhd                    ;         ;
-; Decoder.vhd                      ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Decoder.vhd                     ;         ;
-; divisorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico.vhd             ;         ;
-; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/conversorHex7Seg.vhd            ;         ;
-; divisorGenerico_e_Interface.vhd  ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd ;         ;
-; interface_chaves.vhd             ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/interface_chaves.vhd            ;         ;
-; mux.vhd                          ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/mux.vhd                         ;         ;
-; interface_botoes.vhd             ; yes             ; User VHDL File  ; C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/interface_botoes.vhd            ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                        ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                 ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
+; muxGenerico2x1.vhd               ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd              ;         ;
+; somaConstante.vhd                ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/somaConstante.vhd               ;         ;
+; memoriaROM.vhd                   ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/memoriaROM.vhd                  ;         ;
+; registradorGenerico.vhd          ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/registradorGenerico.vhd         ;         ;
+; ULA.vhdl                         ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/ULA.vhdl                        ;         ;
+; bancoRegistradoresArqRegReg.vhd  ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd ;         ;
+; Unidade_Controle.vhd             ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Unidade_Controle.vhd            ;         ;
+; Processador.vhd                  ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Processador.vhd                 ;         ;
+; Fluxo_Dados.vhd                  ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd                 ;         ;
+; Relogio.vhd                      ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd                     ;         ;
+; flipflop.vhd                     ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/flipflop.vhd                    ;         ;
+; Decoder.vhd                      ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Decoder.vhd                     ;         ;
+; divisorGenerico.vhd              ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico.vhd             ;         ;
+; conversorHex7Seg.vhd             ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/conversorHex7Seg.vhd            ;         ;
+; divisorGenerico_e_Interface.vhd  ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd ;         ;
+; interface_chaves.vhd             ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/interface_chaves.vhd            ;         ;
+; mux.vhd                          ; yes             ; User VHDL File  ; C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/mux.vhd                         ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -225,14 +222,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 213            ;
+; Estimate of Logic utilization (ALMs needed) ; 208            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 280            ;
+; Combinational ALUT usage for logic          ; 268            ;
 ;     -- 7 input functions                    ; 17             ;
-;     -- 6 input functions                    ; 105            ;
-;     -- 5 input functions                    ; 51             ;
+;     -- 6 input functions                    ; 100            ;
+;     -- 5 input functions                    ; 47             ;
 ;     -- 4 input functions                    ; 29             ;
-;     -- <=3 input functions                  ; 78             ;
+;     -- <=3 input functions                  ; 75             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 228            ;
 ;                                             ;                ;
@@ -242,8 +239,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 227            ;
-; Total fan-out                               ; 2080           ;
-; Average fan-out                             ; 3.37           ;
+; Total fan-out                               ; 2023           ;
+; Average fan-out                             ; 3.34           ;
 +---------------------------------------------+----------------+
 
 
@@ -252,20 +249,19 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node                          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name                 ; Library Name ;
 +-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+-----------------------------+--------------+
-; |Relogio                                            ; 280 (1)             ; 228 (0)                   ; 0                 ; 0          ; 55   ; 0            ; |Relogio                                                                                ; Relogio                     ; work         ;
-;    |Decoder:decodificador|                          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Decoder:decodificador                                                          ; Decoder                     ; work         ;
-;    |Processador:CPU|                                ; 204 (0)             ; 140 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU                                                                ; Processador                 ; work         ;
-;       |Fluxo_Dados:FD|                              ; 186 (0)             ; 140 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD                                                 ; Fluxo_Dados                 ; work         ;
-;          |ULA:ULA|                                  ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|ULA:ULA                                         ; ULA                         ; work         ;
+; |Relogio                                            ; 268 (1)             ; 228 (0)                   ; 0                 ; 0          ; 55   ; 0            ; |Relogio                                                                                ; Relogio                     ; work         ;
+;    |Decoder:decodificador|                          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Decoder:decodificador                                                          ; Decoder                     ; work         ;
+;    |Processador:CPU|                                ; 192 (0)             ; 140 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU                                                                ; Processador                 ; work         ;
+;       |Fluxo_Dados:FD|                              ; 180 (0)             ; 140 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD                                                 ; Fluxo_Dados                 ; work         ;
+;          |ULA:ULA|                                  ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|ULA:ULA                                         ; ULA                         ; work         ;
 ;          |bancoRegistradoresArqRegReg:bancoReg|     ; 74 (74)             ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg            ; bancoRegistradoresArqRegReg ; work         ;
 ;          |flipflop:flipflopN|                       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopN                              ; flipflop                    ; work         ;
 ;          |flipflop:flipflopZ|                       ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ                              ; flipflop                    ; work         ;
-;          |memoriaROM:ROM|                           ; 72 (72)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|memoriaROM:ROM                                  ; memoriaROM                  ; work         ;
-;          |muxGenerico2x1:muxImediatoRAM|            ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxImediatoRAM                   ; muxGenerico2x1              ; work         ;
-;          |muxGenerico2x1:muxULA_ImediatoRAM|        ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM               ; muxGenerico2x1              ; work         ;
+;          |memoriaROM:ROM|                           ; 69 (69)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|memoriaROM:ROM                                  ; memoriaROM                  ; work         ;
+;          |muxGenerico2x1:muxULA_ImediatoRAM|        ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM               ; muxGenerico2x1              ; work         ;
 ;          |registradorGenerico:PC|                   ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC                          ; registradorGenerico         ; work         ;
 ;          |somaConstante:somaConstante|              ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|somaConstante:somaConstante                     ; somaConstante               ; work         ;
-;       |Unidade_Controle:UC|                         ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Unidade_Controle:UC                                            ; Unidade_Controle            ; work         ;
+;       |Unidade_Controle:UC|                         ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Unidade_Controle:UC                                            ; Unidade_Controle            ; work         ;
 ;    |conversorHex7Seg:display0|                      ; 8 (8)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display0                                                      ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:display1|                      ; 1 (1)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display1                                                      ; conversorHex7Seg            ; work         ;
 ;    |conversorHex7Seg:display2|                      ; 1 (1)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display2                                                      ; conversorHex7Seg            ; work         ;
@@ -277,7 +273,6 @@ https://fpgasoftware.intel.com/eula.
 ;       |divisorGenerico:baseTempoRapida|             ; 23 (23)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempoRapida ; divisorGenerico             ; work         ;
 ;       |flipflop:registraUmSegundo|                  ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface:interfaceBaseTempo|flipflop:registraUmSegundo      ; flipflop                    ; work         ;
 ;       |mux:muxBaseTempo|                            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface:interfaceBaseTempo|mux:muxBaseTempo                ; mux                         ; work         ;
-;    |interface_botoes:entradaBotoes|                 ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Relogio|interface_botoes:entradaBotoes                                                 ; interface_botoes            ; work         ;
 +-----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -302,12 +297,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[3] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[2] ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:CPU|Fluxo_Dados:FD|ULA:ULA|saida[0]                               ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Relogio|Processador:CPU|Unidade_Controle:UC|palavraControle[2]                        ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Relogio|Processador:CPU|Unidade_Controle:UC|palavraControle[0]                        ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Relogio|conversorHex7Seg:display0|binTo7Seg[3]                                        ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Relogio|Processador:CPU|Unidade_Controle:UC|palavraControle[10]                       ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |Relogio|conversorHex7Seg:display0|binTo7Seg[2]                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------+
 
 
@@ -480,16 +472,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: interface_botoes:entradaBotoes ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; datawidth      ; 4     ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Decoder:decodificador"                                                                     ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -544,7 +526,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; saidaregistrador[7..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; programcounter         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; testzero               ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -559,24 +540,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 43                          ;
 ;     SLD               ; 10                          ;
 ;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 280                         ;
+; arriav_lcell_comb     ; 268                         ;
 ;     arith             ; 62                          ;
 ;         1 data inputs ; 53                          ;
-;         4 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
 ;         5 data inputs ; 8                           ;
 ;     extend            ; 17                          ;
 ;         7 data inputs ; 17                          ;
-;     normal            ; 201                         ;
+;     normal            ; 189                         ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 13                          ;
-;         4 data inputs ; 28                          ;
-;         5 data inputs ; 43                          ;
-;         6 data inputs ; 105                         ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 29                          ;
+;         5 data inputs ; 39                          ;
+;         6 data inputs ; 100                         ;
 ; boundary_port         ; 55                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.70                        ;
-; Average LUT depth     ; 4.49                        ;
+; Average LUT depth     ; 4.47                        ;
 +-----------------------+-----------------------------+
 
 
@@ -585,7 +566,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -595,128 +576,130 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 18 16:48:33 2020
+    Info: Processing started: Sun Oct 18 21:07:27 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aula8 -c aula8
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file aula8.vhd
-    Info (12022): Found design unit 1: aula8-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/aula8.vhd Line: 23
-    Info (12023): Found entity 1: aula8 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/aula8.vhd Line: 5
+    Info (12022): Found design unit 1: aula8-arch_name File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/aula8.vhd Line: 23
+    Info (12023): Found entity 1: aula8 File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/aula8.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file muxgenerico2x1.vhd
-    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 14
-    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 4
+    Info (12022): Found design unit 1: muxGenerico2x1-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 14
+    Info (12023): Found entity 1: muxGenerico2x1 File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file somaconstante.vhd
-    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/somaConstante.vhd Line: 18
-    Info (12023): Found entity 1: somaConstante File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/somaConstante.vhd Line: 5
+    Info (12022): Found design unit 1: somaConstante-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/somaConstante.vhd Line: 18
+    Info (12023): Found entity 1: somaConstante File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/somaConstante.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriarom.vhd
-    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/memoriaROM.vhd Line: 16
-    Info (12023): Found entity 1: memoriaROM File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/memoriaROM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaROM-assincrona File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/memoriaROM.vhd Line: 16
+    Info (12023): Found entity 1: memoriaROM File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/memoriaROM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file registradorgenerico.vhd
-    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/registradorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: registradorGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/registradorGenerico.vhd Line: 4
+    Info (12022): Found design unit 1: registradorGenerico-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/registradorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: registradorGenerico File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/registradorGenerico.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhdl
-    Info (12022): Found design unit 1: ULA-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/ULA.vhdl Line: 21
-    Info (12023): Found entity 1: ULA File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/ULA.vhdl Line: 5
+    Info (12022): Found design unit 1: ULA-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/ULA.vhdl Line: 21
+    Info (12023): Found entity 1: ULA File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/ULA.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bancoregistradoresarqregreg.vhd
-    Info (12022): Found design unit 1: bancoRegistradoresArqRegReg-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd Line: 26
-    Info (12023): Found entity 1: bancoRegistradoresArqRegReg File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd Line: 5
+    Info (12022): Found design unit 1: bancoRegistradoresArqRegReg-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd Line: 26
+    Info (12023): Found entity 1: bancoRegistradoresArqRegReg File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memoriaram.vhd
-    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/memoriaRAM.vhd Line: 22
-    Info (12023): Found entity 1: memoriaRAM File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/memoriaRAM.vhd Line: 5
+    Info (12022): Found design unit 1: memoriaRAM-rtl File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/memoriaRAM.vhd Line: 22
+    Info (12023): Found entity 1: memoriaRAM File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/memoriaRAM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file decodificador2x4.vhd
-    Info (12022): Found design unit 1: decodificador2x4-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/decodificador2x4.vhd Line: 11
-    Info (12023): Found entity 1: decodificador2x4 File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/decodificador2x4.vhd Line: 4
+    Info (12022): Found design unit 1: decodificador2x4-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/decodificador2x4.vhd Line: 11
+    Info (12023): Found entity 1: decodificador2x4 File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/decodificador2x4.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file unidade_controle.vhd
-    Info (12022): Found design unit 1: Unidade_Controle-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Unidade_Controle.vhd Line: 22
-    Info (12023): Found entity 1: Unidade_Controle File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Unidade_Controle.vhd Line: 5
+    Info (12022): Found design unit 1: Unidade_Controle-arch_name File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Unidade_Controle.vhd Line: 22
+    Info (12023): Found entity 1: Unidade_Controle File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Unidade_Controle.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file processador.vhd
-    Info (12022): Found design unit 1: Processador-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Processador.vhd Line: 27
-    Info (12023): Found entity 1: Processador File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Processador.vhd Line: 5
+    Info (12022): Found design unit 1: Processador-arch_name File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Processador.vhd Line: 25
+    Info (12023): Found entity 1: Processador File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Processador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fluxo_dados.vhd
-    Info (12022): Found design unit 1: Fluxo_Dados-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 28
-    Info (12023): Found entity 1: Fluxo_Dados File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 5
+    Info (12022): Found design unit 1: Fluxo_Dados-arch_name File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 29
+    Info (12023): Found entity 1: Fluxo_Dados File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file relogio.vhd
-    Info (12022): Found design unit 1: Relogio-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 23
-    Info (12023): Found entity 1: Relogio File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 5
+    Info (12022): Found design unit 1: Relogio-arch_name File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 23
+    Info (12023): Found entity 1: Relogio File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file flipflop.vhd
-    Info (12022): Found design unit 1: flipflop-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/flipflop.vhd Line: 12
-    Info (12023): Found entity 1: flipflop File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/flipflop.vhd Line: 4
+    Info (12022): Found design unit 1: flipflop-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/flipflop.vhd Line: 12
+    Info (12023): Found entity 1: flipflop File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/flipflop.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
-    Info (12022): Found design unit 1: Decoder-arch_name File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Decoder.vhd Line: 20
-    Info (12023): Found entity 1: Decoder File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Decoder.vhd Line: 5
+    Info (12022): Found design unit 1: Decoder-arch_name File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Decoder.vhd Line: 19
+    Info (12023): Found entity 1: Decoder File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Decoder.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico.vhd
-    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico.vhd Line: 15
-    Info (12023): Found entity 1: divisorGenerico File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico.vhd Line: 5
+    Info (12022): Found design unit 1: divisorGenerico-divInteiro File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico.vhd Line: 15
+    Info (12023): Found entity 1: divisorGenerico File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file conversorhex7seg.vhd
-    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/conversorHex7Seg.vhd Line: 17
-    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/conversorHex7Seg.vhd Line: 4
+    Info (12022): Found design unit 1: conversorHex7Seg-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/conversorHex7Seg.vhd Line: 17
+    Info (12023): Found entity 1: conversorHex7Seg File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/conversorHex7Seg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file divisorgenerico_e_interface.vhd
-    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 16
-    Info (12023): Found entity 1: divisorGenerico_e_Interface File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 5
+    Info (12022): Found design unit 1: divisorGenerico_e_Interface-interface File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 16
+    Info (12023): Found entity 1: divisorGenerico_e_Interface File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file interface_chaves.vhd
-    Info (12022): Found design unit 1: interface_chaves-chaves File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/interface_chaves.vhd Line: 15
-    Info (12023): Found entity 1: interface_chaves File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/interface_chaves.vhd Line: 4
-Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/mux.vhd Line: 4
+    Info (12022): Found design unit 1: interface_chaves-chaves File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/interface_chaves.vhd Line: 15
+    Info (12023): Found entity 1: interface_chaves File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/interface_chaves.vhd Line: 4
+Warning (12090): Entity "mux" obtained from "mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux.vhd
-    Info (12022): Found design unit 1: mux-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/mux.vhd Line: 14
-    Info (12023): Found entity 1: mux File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/mux.vhd Line: 4
+    Info (12022): Found design unit 1: mux-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/mux.vhd Line: 14
+    Info (12023): Found entity 1: mux File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file interface_botoes.vhd
-    Info (12022): Found design unit 1: interface_botoes-comportamento File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/interface_botoes.vhd Line: 15
-    Info (12023): Found entity 1: interface_botoes File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/interface_botoes.vhd Line: 4
+    Info (12022): Found design unit 1: interface_botoes-comportamento File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/interface_botoes.vhd Line: 15
+    Info (12023): Found entity 1: interface_botoes File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/interface_botoes.vhd Line: 4
 Info (12127): Elaborating entity "Relogio" for the top level hierarchy
-Info (12128): Elaborating entity "Processador" for hierarchy "Processador:CPU" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 34
-Info (12128): Elaborating entity "Fluxo_Dados" for hierarchy "Processador:CPU|Fluxo_Dados:FD" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Processador.vhd Line: 36
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxProxPC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 65
-Info (12128): Elaborating entity "memoriaROM" for hierarchy "Processador:CPU|Fluxo_Dados:FD|memoriaROM:ROM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 70
-Warning (10541): VHDL Signal Declaration warning at memoriaROM.vhd(19): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/memoriaROM.vhd Line: 19
-Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 73
-Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:CPU|Fluxo_Dados:FD|somaConstante:somaConstante" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 79
-Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxImediatoRAM" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 82
-Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 87
-Info (12128): Elaborating entity "ULA" for hierarchy "Processador:CPU|Fluxo_Dados:FD|ULA:ULA" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 96
-Info (12128): Elaborating entity "flipflop" for hierarchy "Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 103
-Info (12128): Elaborating entity "Unidade_Controle" for hierarchy "Processador:CPU|Unidade_Controle:UC" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Processador.vhd Line: 39
-Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 38
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempoRapida" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 21
-Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo1seg" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 25
-Info (12128): Elaborating entity "mux" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|mux:muxBaseTempo" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 30
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:decodificador" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 51
-Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 54
-Info (12128): Elaborating entity "interface_chaves" for hierarchy "interface_chaves:entradaChaves" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 92
-Info (12128): Elaborating entity "interface_botoes" for hierarchy "interface_botoes:entradaBotoes" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 99
+Info (12128): Elaborating entity "Processador" for hierarchy "Processador:CPU" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 33
+Info (12128): Elaborating entity "Fluxo_Dados" for hierarchy "Processador:CPU|Fluxo_Dados:FD" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Processador.vhd Line: 35
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxProxPC" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 67
+Info (12128): Elaborating entity "memoriaROM" for hierarchy "Processador:CPU|Fluxo_Dados:FD|memoriaROM:ROM" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 73
+Warning (10541): VHDL Signal Declaration warning at memoriaROM.vhd(19): used implicit default value for signal "content" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/memoriaROM.vhd Line: 19
+Info (12128): Elaborating entity "registradorGenerico" for hierarchy "Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 77
+Info (12128): Elaborating entity "somaConstante" for hierarchy "Processador:CPU|Fluxo_Dados:FD|somaConstante:somaConstante" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 84
+Info (12128): Elaborating entity "muxGenerico2x1" for hierarchy "Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxImediatoRAM" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 88
+Info (12128): Elaborating entity "bancoRegistradoresArqRegReg" for hierarchy "Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 94
+Info (12128): Elaborating entity "ULA" for hierarchy "Processador:CPU|Fluxo_Dados:FD|ULA:ULA" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 104
+Info (12128): Elaborating entity "flipflop" for hierarchy "Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd Line: 112
+Info (12128): Elaborating entity "Unidade_Controle" for hierarchy "Processador:CPU|Unidade_Controle:UC" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Processador.vhd Line: 39
+Info (12128): Elaborating entity "divisorGenerico_e_Interface" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 37
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempoRapida" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 21
+Info (12128): Elaborating entity "divisorGenerico" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|divisorGenerico:baseTempo1seg" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 25
+Info (12128): Elaborating entity "mux" for hierarchy "divisorGenerico_e_Interface:interfaceBaseTempo|mux:muxBaseTempo" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd Line: 30
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:decodificador" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 46
+Info (12128): Elaborating entity "conversorHex7Seg" for hierarchy "conversorHex7Seg:display0" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 50
+Info (12128): Elaborating entity "interface_chaves" for hierarchy "interface_chaves:entradaChaves" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 88
 Warning (19016): Clock multiplexers are found and protected
-    Warning (19017): Found clock multiplexer divisorGenerico_e_Interface:interfaceBaseTempo|mux:muxBaseTempo|saida_MUX File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/mux.vhd Line: 10
+    Warning (19017): Found clock multiplexer divisorGenerico_e_Interface:interfaceBaseTempo|mux:muxBaseTempo|saida_MUX File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/mux.vhd Line: 10
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador" is uninferred due to asynchronous read logic File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd Line: 32
-Warning (113028): 8 out of 77 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/binario.mif Line: 1
-    Warning (113027): Addresses ranging from 69 to 76 are not initialized File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/binario.mif Line: 1
-Critical Warning (127005): Memory depth (1024) in the design file differs from memory depth (77) in the Memory Initialization File "C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/binario.mif" -- setting initial value for remaining addresses to 0
+    Info (276007): RAM logic "Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador" is uninferred due to asynchronous read logic File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd Line: 32
+Warning (113028): 11 out of 80 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/binario.mif Line: 1
+    Warning (113027): Addresses ranging from 69 to 79 are not initialized File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/binario.mif Line: 1
+Critical Warning (127005): Memory depth (1024) in the design file differs from memory depth (80) in the Memory Initialization File "C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/binario.mif" -- setting initial value for remaining addresses to 0
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "dataIn[7]" into a selector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataIn[6]" into a selector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataIn[5]" into a selector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataIn[4]" into a selector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataIn[3]" into a selector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataIn[2]" into a selector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataIn[1]" into a selector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
-    Warning (13048): Converted tri-state node "dataIn[0]" into a selector File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataIn[7]" into a selector File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataIn[6]" into a selector File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataIn[5]" into a selector File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataIn[4]" into a selector File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataIn[3]" into a selector File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataIn[2]" into a selector File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataIn[1]" into a selector File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
+    Warning (13048): Converted tri-state node "dataIn[0]" into a selector File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
-Info (21057): Implemented 506 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 14
+    Warning (15610): No output dependent on input pin "KEY[0]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 15
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 15
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 15
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd Line: 15
+Info (21057): Implemented 494 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 451 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4870 megabytes
-    Info: Processing ended: Sun Oct 18 16:48:57 2020
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:55
+    Info (21061): Implemented 439 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Sun Oct 18 21:08:19 2020
+    Info: Elapsed time: 00:00:52
+    Info: Total CPU time (on all processors): 00:00:50
 
 

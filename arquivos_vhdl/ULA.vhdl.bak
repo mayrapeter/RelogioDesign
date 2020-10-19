@@ -44,11 +44,9 @@ architecture comportamento of ULA is
           op_not when    (seletor = "101") else
           op_and when    (seletor = "110") else
           op_or when     (seletor = "111") else
-          entradab;      -- outra opcao: saida = entradaB
+          entradab;      -- outra opcao: saida = entradaA
 		saida <= saida1;
-		-- flag zero para checar quando uma entrada é igual a outra
       flagZero <= '1' when unsigned(saida1) = unsigned(zero) else '0';
-		-- flag negativo para checar quando uma entrada é menor a outra
 		flagNegativo <= '1' when saida1(larguraDados-1) = '1' else '0';
 
 end architecture;

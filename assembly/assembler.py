@@ -137,7 +137,7 @@ with open('assembly.asm', 'r') as infile:
 	#adicionando o cabecalho necessario ao arquivo .mif para ser usado pela ROM
 	fin = open("binario.mif", "wt")
 	fin.write("WIDTH=26;\n")
-	fin.write("DEPTH=77;\n")
+	fin.write("DEPTH=80;\n")
 	fin.write("ADDRESS_RADIX=DEC;\n")
 	fin.write("DATA_RADIX=BIN; \n")
 	fin.write("CONTENT BEGIN\n")

@@ -25,7 +25,6 @@ architecture arch_name of Relogio is
 	signal address 	: std_logic_vector(9 downto 0);
 	signal habilita	: std_logic_vector(7 downto 0);
 	signal habilitaSW	: std_logic_vector(7 downto 0);
-	signal habilitaBotao	: std_logic_vector(3 downto 0);
 	signal dataOut, dataIn : std_logic_vector(7 downto 0);
 begin
   clk <= CLOCK_50;
@@ -34,7 +33,7 @@ begin
   CPU				:  entity work.Processador generic map (DATA_WIDTH => DATA_WIDTH, ADDR_WIDTH => ADDR_WIDTH)
 						port map (saidaRegistrador => dataOut, dataIn => dataIn, clk => clk, address => address, w => w, r => r);
   
-						
+  -- Base de tempo com SW(0) como seletor
   interfaceBaseTempo : entity work.divisorGenerico_e_Interface
 						port map (clk => CLOCK_50,
 						habilitaLeitura => r,
@@ -43,14 +42,11 @@ begin
 						selBaseTempo => SW(0),
 						leituraUmSegundo => dataIn);
 						
-	
---  testeT: entity work.divisorGenerico
---						port map (clk => CLOCK_50, saida_clk => clk);
-						
-	
+  -- Decodificador que recebe o endereço e define os habilitas
   decodificador: entity work.Decoder
-						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW, habilitaBotao => habilitaBotao);
-	
+						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW);
+
+  -- LCD
   display0 :  entity work.conversorHex7Seg
 						port map(dadoHex => dataOut(3 downto 0),
                  habilita => habilita(0),
@@ -95,14 +91,6 @@ begin
       saida    => dataIn,
       habilita => habilitaSW
     );
-	 
-  entradaBotoes : entity work.interface_botoes
-    port map(
-      entrada  => KEY(3 downto 0),
-      saida    => dataIn,
-      habilita => habilitaBotao
-    );
-	 
 					  
 
 end architecture;

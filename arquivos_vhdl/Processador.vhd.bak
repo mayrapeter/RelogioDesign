@@ -16,7 +16,9 @@ entity Processador is
     saidaRegistrador : out  std_logic_vector(DATA_WIDTH-1 downto 0);
 	 programCounter   : out  std_logic_vector(ADDR_WIDTH-1 downto 0);
 	 address				: out  std_logic_vector(ADDR_WIDTH-1 downto 0);
-	 w, r       		: out  std_logic
+	 w, r       		: out  std_logic;
+	 
+	 testZERO : out std_logic
 	 
   );
 end entity;
@@ -31,16 +33,14 @@ architecture arch_name of Processador is
 begin
 
   -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
-  -- Fluxo de dados
   FD:  entity work.Fluxo_Dados generic map (DATA_WIDTH => 8, ROM_DATA_WIDTH => 26, ROM_ADDR_WIDTH => 10, IncrementoPC => 1)
           port map (dataIn => dataIn, palavraControle => palavraControle_UC_FD, Opcode => Opcode, saidaRegistrador => saidaRegistrador, address => address, 
 						  programCounter => programCounter, CLOCK_50 =>  clk, zero => zero, negativo => negativo);
-  -- Unidade de controle
   UC:  entity work.Unidade_Controle generic map (DATA_WIDTH => 8, ADDR_WIDTH => 4)
           port map (palavraControle => palavraControle_UC_FD, Opcode => Opcode, clk => clk, zero => zero, negativo => negativo);
-  -- Habilita escrita de perifericos
   w <= palavraControle_UC_FD(0);
-  -- Habilita leitura de perifericos
   r <= palavraControle_UC_FD(1);
+  
+  testZERO <= zero;
   
 end architecture;

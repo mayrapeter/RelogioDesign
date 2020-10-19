@@ -15,7 +15,6 @@ entity Fluxo_Dados is
     CLOCK_50     		:  in  std_logic;
 	 dataIn				:  in  std_logic_vector(DATA_WIDTH-1 downto 0);
 	 palavraControle  :  in  std_logic_vector(10 downto 0);
-	 -- Output ports
     Opcode	 			:  out std_logic_vector(3 downto 0);
 	 saidaRegistrador :	out std_logic_vector(DATA_WIDTH-1 downto 0);
 	 zero, negativo	:  out std_logic;
@@ -63,34 +62,28 @@ architecture arch_name of Fluxo_Dados is
   -- signal <n  std_logic_vector(1 downto 0) is controlWord(5 downto 4);
 
 begin
-	-- mux que seleciona se o código segue para a próxima linha ou faz jump
 	muxProxPC :  entity work.muxGenerico2x1  generic map (larguraDados => ROM_ADDR_WIDTH)
         port map( entradaA_MUX => SomaConstante_MuxProxPC,
                   entradaB_MUX => Imediato, 
                   seletor_MUX => selJump,
                   saida_MUX => saidaMuxPC);
-	-- Memória ROM
 	ROM : entity work.memoriaROM   generic map (dataWidth => ROM_DATA_WIDTH, addrWidth => ROM_ADDR_WIDTH)
         port map (Endereco => PC_EndRomSomaConstante, 
 					   Dado => Instrucao);
-	-- Program Counter
 	PC : entity work.registradorGenerico   generic map (larguraDados => ROM_ADDR_WIDTH)
         port map (DIN => saidaMuxPC, 
 					   DOUT => PC_EndRomSomaConstante, 
 						ENABLE => '1', 
 						CLK => CLOCK_50, 
 						RST => '0');
-	-- Soma 1 no PC para seguir para próxima linha
 	somaConstante :  entity work.somaConstante  generic map (larguraDados => ROM_ADDR_WIDTH, constante => IncrementoPC)
         port map( entrada => PC_EndRomSomaConstante, 
 					  saida => SomaConstante_MuxProxPC);
-	-- Mux que seleciona o que vem dos periféricos ou o imediato
 	muxImediatoRAM :  entity work.muxGenerico2x1  generic map (larguraDados => 8)
         port map( entradaA_MUX => dataIn,
                  entradaB_MUX =>  ImediatoValor,
                  seletor_MUX => selMuxImediatoRAM,
                  saida_MUX => MuxMux);
-	-- Banco de registradores
 	bancoReg : entity work.bancoRegistradoresArqRegReg   generic map (larguraDados => 8, larguraEndBancoRegs => 4)
         port map ( clk => CLOCK_50,
 					  enderecoC => endRC,
@@ -100,7 +93,6 @@ begin
 					  escreveA => habEscritaRegistrador,
 					  saidaC => RC,
 					  saidaB  => RB);
-	-- ULA
 	ULA : entity work.ULA  generic map(larguraDados => 8)
         port map (entradaB => RB, 
 					  entradaC =>  RC, 
@@ -108,25 +100,29 @@ begin
 					  seletor => Operacao, 
 					  flagZero => sigZero,
 					  flagNegativo => sigNegativo);
-	-- Flipflop que guarda o sinal zero para fazer comparações e jumps condicionais
 	flipflopZ : entity work.flipflop   
           port map (DIN => '1', DOUT => zero, ENABLE => sigZero, CLK => CLOCK_50, RST => rstZ);
-	-- Flipflop que guarda o sinal negativo para fazer comparações e jumps condicionais
 	flipflopN : entity work.flipflop   
           port map (DIN => '1', DOUT => negativo, ENABLE => sigNegativo, CLK => CLOCK_50, RST => rstN);
-	-- Mux que seleciona se o que será escrito no registrador será o que vem da ULA ou do muxImediatoRAM
 	muxULA_ImediatoRAM :  entity work.muxGenerico2x1  generic map (larguraDados => 8)
         port map( entradaA_MUX => MuxMux,
                  entradaB_MUX =>  saidaULA,
                  seletor_MUX => selMuxULA_ImediatoRAM,
                  saida_MUX => dadoEscrita);
-	-- opcode 
+--	RAM : entity work.memoriaRAM   generic map (dataWidth => 8, addrWidth => 10)
+--        port map (addr => Imediato, 
+--					  we => habEscritaMEM, 
+--					  re => habLeituraMEM, 
+--					  habilita => habilita(1), 
+--					  clk => CLOCK_50,
+--					  dado_in => RB, 
+--					  dado_out => saidaRAM);
+--	decodificador: entity work.decodificador2x4
+--        port map (seletor => Imediato(7 downto 0), 
+--					  habilita => habilita);
 	Opcode <= Opcode1;
-	-- imediato
 	address <= Imediato;
-	-- program counter
 	programCounter <= PC_EndRomSomaConstante;
-	-- saida do registrador
 	saidaRegistrador <= RB;
 	
 end architecture;
