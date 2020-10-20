@@ -13,9 +13,15 @@ JE linha_while
 MOVC REG_15 $3
 CMP REG_11 REG_15
 JE linha_while
+MOVC REG_15 $7
+CMP REG_11 REG_15
+JE linha_while
 MOVC REG_V1 $1
 LOAD REG_11 SW1
 CMP REG_11 REG_V1
+JE bt_rapida
+MOVC REG_15 $5
+CMP REG_11 REG_15
 JE bt_rapida
 JMP bt_normal
 bt_rapida:
@@ -28,11 +34,25 @@ LOAD REG_8 LE_BASE_TEMPO_N
 CMP REG_8 REG_V1
 JE passou_um_segundo
 JMP linha_while
-passou_um_segundo:                                                
+passou_um_segundo: 
 MOVC REG_9 $6
 MOVC REG_10 $10
+LOAD REG_11 SW1
+MOVC REG_15 $5
+CMP REG_11 REG_15   
+JE meio_periodo  
+MOVC REG_15 $4
+CMP REG_11 REG_15   
+JE meio_periodo 
+JMP periodo_regular                                      
+meio_periodo:
+MOVC REG_11 $2
+MOVC REG_12 $1 
+JMP continua 
+periodo_regular:
 MOVC REG_11 $4
-MOVC REG_12 $2                                                     
+MOVC REG_12 $2  
+continua:                                                  
 ADD REG_13 REG_V1 REG_US
 MOVR REG_US REG_13    
 CMP REG_10 REG_US   

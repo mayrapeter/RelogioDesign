@@ -12,7 +12,8 @@ entity Decoder is
     -- Output ports
     habilita :  out  std_logic_vector(7 downto 0);
 	 habilitaSW: out  std_logic_vector(7 downto 0);
-	 habilitaBT: out std_logic_vector(3 downto 0)
+	 habilitaBT: out std_logic_vector(3 downto 0);
+	 habilitaLED: out std_logic
   );
 end entity;
 
@@ -39,5 +40,6 @@ begin
 	habilitaSW<= "00000001" when Imediato = "0000000111" else	-- SW0
 					 "00000010" when Imediato = "0000001000" else   -- SW1
 					 "00000000";
+	habilitaLED <= '1' when Imediato = "0000001100" else '0';	-- led
 						 
 end architecture;

@@ -204,14 +204,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDR[8]",
-					"strict" : false
-				},
-				{
-					"name" : "LEDR[9]",
-					"strict" : false
-				},
-				{
 					"name" : "CLOCK_50",
 					"strict" : false
 				},
@@ -232,7 +224,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[7]",
+					"name" : "SW[4]",
 					"strict" : false
 				},
 				{
@@ -240,11 +232,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[4]",
+					"name" : "SW[6]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[6]",
+					"name" : "SW[7]",
 					"strict" : false
 				}
 			]

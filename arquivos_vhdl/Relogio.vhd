@@ -24,7 +24,7 @@ end entity;
 
 
 architecture arch_name of Relogio is
-	signal clk, w, r 	: std_logic;
+	signal clk, w, r, habilitaLED 	: std_logic;
 	signal address 	: std_logic_vector(9 downto 0);
 	signal habilita	: std_logic_vector(7 downto 0);
 	signal habilitaSW	: std_logic_vector(7 downto 0);
@@ -35,9 +35,7 @@ begin
   
   -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
   CPU				:  entity work.Processador generic map (DATA_WIDTH => DATA_WIDTH, ADDR_WIDTH => ADDR_WIDTH)
-						port map (saidaRegistrador => dataOut, dataIn => dataIn, clk => clk, address => address, w => w, r => r,
-						--TESTE
-						programCounter => LEDR
+						port map (saidaRegistrador => dataOut, dataIn => dataIn, clk => clk, address => address, w => w, r => r
 						);
   
   -- Base de tempo rapida
@@ -56,7 +54,7 @@ begin
 						
   -- Decodificador que recebe o endereço e define os habilitas
   decodificador: entity work.Decoder
-						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW, habilitaBT => habilitaBT);
+						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW, habilitaBT => habilitaBT, habilitaLED => habilitaLED);
 
   -- LCD
   display0 :  entity work.conversorHex7Seg
@@ -113,6 +111,13 @@ begin
 		r => r	
     );
 	 
+  led : entity work.interface_leds
+    port map(
+      entrada  => dataOut,
+      saida    => LEDR(7 downto 0),
+      habilita => habilitaLED,
+		w => w	
+    );
 	 
 					  
 
