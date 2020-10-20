@@ -45,8 +45,8 @@ architecture arch_name of Fluxo_Dados is
   signal dadoEscrita : std_logic_vector(DATA_WIDTH-1 downto 0);
   signal saidaULA : std_logic_vector(DATA_WIDTH-1 downto 0);
   
-  alias  rstZ : std_logic is palavraControle(10);
-  alias  rstN : std_logic is palavraControle(9);
+  alias  leZ : std_logic is palavraControle(10);
+  alias  leN : std_logic is palavraControle(9);
   alias  selJump : std_logic is palavraControle(8);
   alias  selMuxULA_ImediatoRAM : std_logic is palavraControle(7);
   alias  selMuxImediatoRAM : std_logic is palavraControle(6);
@@ -110,10 +110,10 @@ begin
 					  flagNegativo => sigNegativo);
 	-- Flipflop que guarda o sinal zero para fazer comparações e jumps condicionais
 	flipflopZ : entity work.flipflop   
-          port map (DIN => '1', DOUT => zero, ENABLE => sigZero, CLK => CLOCK_50, RST => rstZ);
+          port map (DIN => sigZero, DOUT => zero, ENABLE => leZ, CLK => CLOCK_50, RST => '0');
 	-- Flipflop que guarda o sinal negativo para fazer comparações e jumps condicionais
 	flipflopN : entity work.flipflop   
-          port map (DIN => '1', DOUT => negativo, ENABLE => sigNegativo, CLK => CLOCK_50, RST => rstN);
+          port map (DIN => sigNegativo, DOUT => negativo, ENABLE => leN, CLK => CLOCK_50, RST => '0');
 	-- Mux que seleciona se o que será escrito no registrador será o que vem da ULA ou do muxImediatoRAM
 	muxULA_ImediatoRAM :  entity work.muxGenerico2x1  generic map (larguraDados => 8)
         port map( entradaA_MUX => MuxMux,

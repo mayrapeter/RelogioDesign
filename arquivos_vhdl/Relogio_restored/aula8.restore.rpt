@@ -1,0 +1,98 @@
+Restore Archived Project report for aula8
+Sun Oct 18 19:21:17 2020
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Sun Oct 18 19:21:17 2020 ;
+; Revision Name                   ; aula8                                 ;
+; Top-level Entity Name           ; Relogio                               ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/Relogio.qar' into the 'C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/Relogio_restored/' directory
+Info: Generated report 'aula8.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/17.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Sun Oct 18 19:21:17 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
++---------------------------------+
+; Files Not Restored              ;
++---------------------------------+
+; File Name                       ;
++---------------------------------+
+; qar_info.json                   ;
+; Decoder.vhd                     ;
+; Fluxo_Dados.vhd                 ;
+; Processador.vhd                 ;
+; Relogio.vhd                     ;
+; ULA.vhdl                        ;
+; Unidade_Controle.vhd            ;
+; Waveform.vwf                    ;
+; Waveform1.vwf                   ;
+; aula8.qpf                       ;
+; aula8.qsf                       ;
+; aula8.vhd                       ;
+; bancoRegistradoresArqRegReg.vhd ;
+; conversorHex7Seg.vhd            ;
+; decodificador2x4.vhd            ;
+; divisorGenerico.vhd             ;
+; divisorGenerico_e_Interface.vhd ;
+; flipflop.vhd                    ;
+; memoriaRAM.vhd                  ;
+; memoriaROM.vhd                  ;
+; muxGenerico2x1.vhd              ;
+; output_files/Waveform.vwf       ;
+; registradorGenerico.vhd         ;
+; somaConstante.vhd               ;
+; assignment_defaults.qdf         ;
++---------------------------------+
+
+

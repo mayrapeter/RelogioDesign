@@ -5,13 +5,26 @@ MOVC REG_DM $0
 MOVC REG_UH $0
 MOVC REG_DH $0
 linha_while:
-MOVC REG_14 $0
-MOVC REG_V1 $1
-LOAD REG_14 SW1
-CMP REG_14 REG_V1
+MOVC REG_15 $2
+MOVC REG_11 $0
+LOAD REG_11 SW1
+CMP REG_11 REG_15
+JE linha_while
+MOVC REG_15 $3
+CMP REG_11 REG_15
 JE linha_while
 MOVC REG_V1 $1
-LOAD REG_8 CLEAR_TEMPO
+LOAD REG_11 SW1
+CMP REG_11 REG_V1
+JE bt_rapida
+JMP bt_normal
+bt_rapida:
+LOAD REG_8 LE_BASE_TEMPO_R
+CMP REG_8 REG_V1
+JE passou_um_segundo
+JMP linha_while
+bt_normal:
+LOAD REG_8 LE_BASE_TEMPO_N
 CMP REG_8 REG_V1
 JE passou_um_segundo
 JMP linha_while
@@ -56,17 +69,18 @@ MOVR REG_UH REG_13
 else_hora_u_1:
 CMP REG_10 REG_UH   
 JE else_hora_u_2
-JMP else_hora_d_1
+JMP comp2
 else_hora_u_2:   
 MOVC REG_UH $0
 ADD REG_13 REG_V1 REG_DH
-MOVR REG_DH REG_13                                                    
-else_hora_d_1:
-CMP REG_12 REG_DH 
-JE comp2
-JMP linha_store
+MOVR REG_DH REG_13 
+JMP linha_store                                                  
 comp2:
 CMP REG_11 REG_UH
+JE else_hora_d_1
+JMP linha_store
+else_hora_d_1:
+CMP REG_12 REG_DH 
 JE else_hora_d_2
 JMP linha_store
 else_hora_d_2:
@@ -80,5 +94,6 @@ STORE REG_DM LCD_DM
 STORE REG_UH LCD_UH
 STORE REG_DH LCD_DH
 MOVC REG_14 $0
-STORE REG_14 CLEAR_TEMPO
-JMP linha_while              
+STORE REG_14 LIMPA_BASE_TEMPO_R
+STORE REG_14 LIMPA_BASE_TEMPO_N
+JMP linha_while

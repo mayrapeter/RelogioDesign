@@ -15,7 +15,10 @@ entity Relogio is
 	 KEY		  : in std_logic_vector(3 downto 0);
 
     -- Output ports
-	 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5		:	out  std_logic_vector(6 downto 0)
+	 HEX0, HEX1, HEX2, HEX3, HEX4, HEX5		:	out  std_logic_vector(6 downto 0);
+	 
+	 --PARA TESTES
+	 LEDR		  : out std_logic_vector(9 downto 0)
   );
 end entity;
 
@@ -25,26 +28,35 @@ architecture arch_name of Relogio is
 	signal address 	: std_logic_vector(9 downto 0);
 	signal habilita	: std_logic_vector(7 downto 0);
 	signal habilitaSW	: std_logic_vector(7 downto 0);
+	signal habilitaBT	: std_logic_vector(3 downto 0);
 	signal dataOut, dataIn : std_logic_vector(7 downto 0);
 begin
   clk <= CLOCK_50;
   
   -- Para instanciar, a atribuição de sinais (e generics) segue a ordem: (nomeSinalArquivoDefinicaoComponente => nomeSinalNesteArquivo)
   CPU				:  entity work.Processador generic map (DATA_WIDTH => DATA_WIDTH, ADDR_WIDTH => ADDR_WIDTH)
-						port map (saidaRegistrador => dataOut, dataIn => dataIn, clk => clk, address => address, w => w, r => r);
+						port map (saidaRegistrador => dataOut, dataIn => dataIn, clk => clk, address => address, w => w, r => r,
+						--TESTE
+						programCounter => LEDR
+						);
   
-  -- Base de tempo com SW(0) como seletor
-  interfaceBaseTempo : entity work.divisorGenerico_e_Interface
+  -- Base de tempo rapida
+  interfaceBaseTempoRapida : entity work.divisorGenerico_e_Interface_Paulo generic map (divisor => 25000)
 						port map (clk => CLOCK_50,
-						habilitaLeitura => r,
-						habilita => habilita(6),
-						limpaLeitura => w,
-						selBaseTempo => SW(0),
+						habilitaLeitura => habilitaBT(1),
+						limpaLeitura => habilitaBT(0),
 						leituraUmSegundo => dataIn);
+  -- Base de tempo lenta
+  interfaceBaseTempoNormal : entity work.divisorGenerico_e_Interface_Paulo generic map (divisor => 25000000)
+						port map (clk => CLOCK_50,
+						habilitaLeitura => habilitaBT(3),
+						limpaLeitura => habilitaBT(2),
+						leituraUmSegundo => dataIn);
+						
 						
   -- Decodificador que recebe o endereço e define os habilitas
   decodificador: entity work.Decoder
-						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW);
+						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW, habilitaBT => habilitaBT);
 
   -- LCD
   display0 :  entity work.conversorHex7Seg
@@ -85,12 +97,23 @@ begin
                  saida7seg => HEX5);
 					  
   -- chaves
-  entradaChaves : entity work.interface_chaves
+--  SW0 : entity work.interface_chavesSW0
+--    port map(
+--      entrada  => SW,
+--      saida    => dataIn,
+--      habilita => habilitaSW(0)
+--    );
+	 
+	   -- chaves
+  SW1 : entity work.interface_chavesSW1
     port map(
-      entrada  => SW(DATA_WIDTH - 1 downto 0),
+      entrada  => SW,
       saida    => dataIn,
-      habilita => habilitaSW
+      habilita => habilitaSW(1),
+		r => r	
     );
+	 
+	 
 					  
 
 end architecture;

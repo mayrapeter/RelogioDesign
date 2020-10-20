@@ -20,8 +20,8 @@ end entity;
 
 
 architecture arch_name of Unidade_Controle is
-  alias rstZ : std_logic is palavraControle(10);
-  alias rstN : std_logic is palavraControle(9);
+  alias leZ : std_logic is palavraControle(10);
+  alias leN : std_logic is palavraControle(9);
   alias selMuxJump : std_logic is palavraControle(8);
   alias selMuxULAImed : std_logic is palavraControle(7);
   alias selMuxImedRAM : std_logic is palavraControle(6);
@@ -66,8 +66,8 @@ architecture arch_name of Unidade_Controle is
 
   habLeituraMEM <= '1' when opCode = LOAD else '0';
   habEscritaMEM <= '1' when opCode = STORE else '0';
-  rstZ <= '0'when opCode = CMP or  opCode = JE else '1';
-  rstN <= '0'when opCode = CMP or  opCode = JL else '1'; 
+  leZ <= '1'when opCode = CMP;
+  leN <= '1'when opCode = CMP; 
 
 					 
 

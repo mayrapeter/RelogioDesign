@@ -1,13 +1,13 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula8 -c aula8 --vector_source="C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/aula8_pasta/Waveform.vwf" --testbench_file="C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/aula8_pasta/simulation/qsim/Waveform.vwf.vht"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula8 -c aula8 --vector_source="C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/aula8_pasta/Waveform.vwf" --testbench_file="C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/aula8_pasta/simulation/qsim/Waveform.vwf.vht"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/aula8_pasta/simulation/qsim/" aula8 -c aula8</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/aula8_pasta/simulation/qsim/" aula8 -c aula8</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula8 -c aula8 --vector_source="C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/Waveform2.vwf" --testbench_file="C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/simulation/qsim/Waveform2.vwf.vht"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off aula8 -c aula8 --vector_source="C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/Waveform2.vwf" --testbench_file="C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/simulation/qsim/Waveform2.vwf.vht"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/simulation/qsim/" aula8 -c aula8</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory="C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/simulation/qsim/" aula8 -c aula8</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vcom -work work aula8.vho
-vcom -work work Waveform.vwf.vht
-vsim -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Relogio_vhd_vec_tst
+vcom -work work Waveform2.vwf.vht
+vsim  -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Relogio_vhd_vec_tst
 vcd file -direction aula8.msim.vcd
 vcd add -internal Relogio_vhd_vec_tst/*
 vcd add -internal Relogio_vhd_vec_tst/i1/*
@@ -24,7 +24,7 @@ quit -f
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vcom -work work aula8.vho
-vcom -work work Waveform.vwf.vht
+vcom -work work Waveform2.vwf.vht
 vsim -novopt -c -t 1ps -sdfmax Relogio_vhd_vec_tst/i1=aula8_vhd.sdo -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Relogio_vhd_vec_tst
 vcd file -direction aula8.msim.vcd
 vcd add -internal Relogio_vhd_vec_tst/*
@@ -566,224 +566,144 @@ SIGNAL("HEX5[0]")
 	PARENT = "HEX5";
 }
 
-SIGNAL("LEDR")
+SIGNAL("KEY")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 10;
+	WIDTH = 4;
 	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
+	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("LEDR[9]")
+SIGNAL("KEY[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
+	DIRECTION = INPUT;
+	PARENT = "KEY";
 }
 
-SIGNAL("LEDR[8]")
+SIGNAL("KEY[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
+	DIRECTION = INPUT;
+	PARENT = "KEY";
 }
 
-SIGNAL("LEDR[7]")
+SIGNAL("KEY[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
+	DIRECTION = INPUT;
+	PARENT = "KEY";
 }
 
-SIGNAL("LEDR[6]")
+SIGNAL("KEY[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
+	DIRECTION = INPUT;
+	PARENT = "KEY";
 }
 
-SIGNAL("LEDR[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
-}
-
-SIGNAL("LEDR[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
-}
-
-SIGNAL("LEDR[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
-}
-
-SIGNAL("LEDR[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
-}
-
-SIGNAL("LEDR[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
-}
-
-SIGNAL("LEDR[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "LEDR";
-}
-
-SIGNAL("programCounter")
+SIGNAL("SW")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 10;
+	WIDTH = 8;
 	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
+	DIRECTION = INPUT;
 	PARENT = "";
 }
 
-SIGNAL("programCounter[9]")
+SIGNAL("SW[7]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
+	DIRECTION = INPUT;
+	PARENT = "SW";
 }
 
-SIGNAL("programCounter[8]")
+SIGNAL("SW[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
+	DIRECTION = INPUT;
+	PARENT = "SW";
 }
 
-SIGNAL("programCounter[7]")
+SIGNAL("SW[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
+	DIRECTION = INPUT;
+	PARENT = "SW";
 }
 
-SIGNAL("programCounter[6]")
+SIGNAL("SW[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
+	DIRECTION = INPUT;
+	PARENT = "SW";
 }
 
-SIGNAL("programCounter[5]")
+SIGNAL("SW[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
+	DIRECTION = INPUT;
+	PARENT = "SW";
 }
 
-SIGNAL("programCounter[4]")
+SIGNAL("SW[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
+	DIRECTION = INPUT;
+	PARENT = "SW";
 }
 
-SIGNAL("programCounter[3]")
+SIGNAL("SW[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
+	DIRECTION = INPUT;
+	PARENT = "SW";
 }
 
-SIGNAL("programCounter[2]")
+SIGNAL("SW[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
-}
-
-SIGNAL("programCounter[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
-}
-
-SIGNAL("programCounter[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "programCounter";
+	DIRECTION = INPUT;
+	PARENT = "SW";
 }
 
 TRANSITION_LIST("CLOCK_50")
@@ -1178,183 +1098,111 @@ TRANSITION_LIST("HEX5[0]")
 	}
 }
 
-TRANSITION_LIST("LEDR[9]")
+TRANSITION_LIST("KEY[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[8]")
+TRANSITION_LIST("KEY[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[7]")
+TRANSITION_LIST("KEY[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[6]")
+TRANSITION_LIST("KEY[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[5]")
+TRANSITION_LIST("SW[7]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[4]")
+TRANSITION_LIST("SW[6]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[3]")
+TRANSITION_LIST("SW[5]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[2]")
+TRANSITION_LIST("SW[4]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[1]")
+TRANSITION_LIST("SW[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("LEDR[0]")
+TRANSITION_LIST("SW[2]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("programCounter[9]")
+TRANSITION_LIST("SW[1]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
-TRANSITION_LIST("programCounter[8]")
+TRANSITION_LIST("SW[0]")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("programCounter[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("programCounter[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("programCounter[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("programCounter[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("programCounter[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("programCounter[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("programCounter[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("programCounter[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1849,17 +1697,17 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR";
-	EXPAND_STATUS = COLLAPSED;
+	CHANNEL = "KEY";
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 49;
 	TREE_LEVEL = 0;
-	CHILDREN = 50, 51, 52, 53, 54, 55, 56, 57, 58, 59;
+	CHILDREN = 50, 51, 52, 53;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[9]";
+	CHANNEL = "KEY[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 50;
@@ -1869,7 +1717,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[8]";
+	CHANNEL = "KEY[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 51;
@@ -1879,7 +1727,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[7]";
+	CHANNEL = "KEY[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 52;
@@ -1889,7 +1737,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[6]";
+	CHANNEL = "KEY[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 53;
@@ -1899,172 +1747,92 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[5]";
-	EXPAND_STATUS = COLLAPSED;
+	CHANNEL = "SW";
+	EXPAND_STATUS = EXPANDED;
 	RADIX = Binary;
 	TREE_INDEX = 54;
-	TREE_LEVEL = 1;
-	PARENT = 49;
+	TREE_LEVEL = 0;
+	CHILDREN = 55, 56, 57, 58, 59, 60, 61, 62;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[4]";
+	CHANNEL = "SW[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 55;
 	TREE_LEVEL = 1;
-	PARENT = 49;
+	PARENT = 54;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[3]";
+	CHANNEL = "SW[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 56;
 	TREE_LEVEL = 1;
-	PARENT = 49;
+	PARENT = 54;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[2]";
+	CHANNEL = "SW[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 57;
 	TREE_LEVEL = 1;
-	PARENT = 49;
+	PARENT = 54;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[1]";
+	CHANNEL = "SW[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 58;
 	TREE_LEVEL = 1;
-	PARENT = 49;
+	PARENT = 54;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "LEDR[0]";
+	CHANNEL = "SW[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 59;
 	TREE_LEVEL = 1;
-	PARENT = 49;
+	PARENT = 54;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "programCounter";
+	CHANNEL = "SW[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 60;
-	TREE_LEVEL = 0;
-	CHILDREN = 61, 62, 63, 64, 65, 66, 67, 68, 69, 70;
+	TREE_LEVEL = 1;
+	PARENT = 54;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "programCounter[9]";
+	CHANNEL = "SW[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 61;
 	TREE_LEVEL = 1;
-	PARENT = 60;
+	PARENT = 54;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "programCounter[8]";
+	CHANNEL = "SW[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 62;
 	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "programCounter[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 63;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "programCounter[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 64;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "programCounter[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 65;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "programCounter[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 66;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "programCounter[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 67;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "programCounter[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 68;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "programCounter[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 69;
-	TREE_LEVEL = 1;
-	PARENT = 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "programCounter[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 70;
-	TREE_LEVEL = 1;
-	PARENT = 60;
+	PARENT = 54;
 }
 
 TIME_BAR

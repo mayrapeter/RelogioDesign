@@ -11,7 +11,8 @@ entity Decoder is
 
     -- Output ports
     habilita :  out  std_logic_vector(7 downto 0);
-	 habilitaSW: out  std_logic_vector(7 downto 0)
+	 habilitaSW: out  std_logic_vector(7 downto 0);
+	 habilitaBT: out std_logic_vector(3 downto 0)
   );
 end entity;
 
@@ -26,8 +27,14 @@ begin
 				  "00001000" when Imediato = "0000000011" else -- display 3
 				  "00010000" when Imediato = "0000000100" else -- display 4
 				  "00100000" when Imediato = "0000000101" else -- display 5
-				  "01000000" when Imediato = "0000000110" else -- base de tempo
 				  "00000000";
+				  
+	-- habilita base de tempo
+	habilitaBT<= "0001" when Imediato = "0000000110" else -- limpa base de tempo rapida	
+				  "0010" when Imediato = "0000001001" else -- leitura base de tempo rapida
+				  "0100" when Imediato = "0000001010" else -- limpa base de tempo normal
+				  "1000" when Imediato = "0000001011" else -- leitura base de tempo normal
+				  "0000";
 	-- habilita para chaves			  
 	habilitaSW<= "00000001" when Imediato = "0000000111" else	-- SW0
 					 "00000010" when Imediato = "0000001000" else   -- SW1

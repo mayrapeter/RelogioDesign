@@ -115,13 +115,12 @@ reg_address_dict = {
 
 #dicionario de enderecos no decoder
 mem_address_dict = {
-	'CLEAR_TEMPO': '0000000110',
+	'LE_BASE_TEMPO_R': '0000001001',
+	'LIMPA_BASE_TEMPO_R': '0000000110',
+	'LE_BASE_TEMPO_N': '0000001011',
+	'LIMPA_BASE_TEMPO_N': '0000001010',
 	'SW0':		   '0000000111',
 	'SW1':		   '0000001000',
-	'KEY0':        '0000001001',
-	'KEY1':        '0000001010',
-	'KEY2':        '0000001011',
-	'KEY3':        '0000001100',
 	'LCD_US':      '0000000000',
 	'LCD_DS':      '0000000001',
 	'LCD_UM':      '0000000010',
@@ -137,7 +136,7 @@ with open('assembly.asm', 'r') as infile:
 	#adicionando o cabecalho necessario ao arquivo .mif para ser usado pela ROM
 	fin = open("binario.mif", "wt")
 	fin.write("WIDTH=26;\n")
-	fin.write("DEPTH=80;\n")
+	fin.write("DEPTH=88;\n")
 	fin.write("ADDRESS_RADIX=DEC;\n")
 	fin.write("DATA_RADIX=BIN; \n")
 	fin.write("CONTENT BEGIN\n")

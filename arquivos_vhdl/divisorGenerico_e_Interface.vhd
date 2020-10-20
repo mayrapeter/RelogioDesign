@@ -41,6 +41,6 @@ registraUmSegundo: entity work.flipflop
          RST => habilita and limpaLeitura);
 
 -- Faz o tristate de saida:
-leituraUmSegundo <= "0000000" & sinalUmSegundo when habilitaLeitura = '1' else (others => 'Z');
+leituraUmSegundo <= "0000000" & sinalUmSegundo when habilitaLeitura = '1' else ("ZZZZZZZZ");
 
 end architecture interface;
