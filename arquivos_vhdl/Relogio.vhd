@@ -29,7 +29,7 @@ architecture arch_name of Relogio is
 	signal habilita	: std_logic_vector(7 downto 0);
 	signal habilitaSW	: std_logic_vector(7 downto 0);
 	signal habilitaBT	: std_logic_vector(3 downto 0);
-	signal habilitaBotao	: std_logic_vector(3 downto 0);
+	signal habilitaBotao	: std_logic;
 	signal dataOut, dataIn : std_logic_vector(7 downto 0);
 begin
   clk <= CLOCK_50;
@@ -125,7 +125,7 @@ begin
     port map(
       entrada  => KEY(3 downto 0),
       saida    => dataIn,
-      habilita => habilitaBotao(1),
+      habilita => habilitaBotao,
 		r        =>r
     );
 	 

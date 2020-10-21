@@ -128,10 +128,7 @@ mem_address_dict = {
 	'LCD_DM':      '0000000011',
 	'LCD_UH':      '0000000100',
 	'LCD_DH':      '0000000101',
-	'KEY0':        '0000001101',
-	'KEY1':        '0000001110',
-	'KEY2':        '0000001111',
-	'KEY3':        '0000010000',
+	'KEY':        '0000001101'
 }
 
 #abrindo o arquivo com o assembly a ser traduzido

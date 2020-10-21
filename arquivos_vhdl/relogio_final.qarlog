@@ -1,0 +1,38 @@
+Quartus Prime Archive log --	C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/relogio_final.qarlog
+
+Archive:	C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/relogio_final.qar
+Date:		Sun Oct 18 23:17:49 2020
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Decoder.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Fluxo_Dados.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Processador.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Relogio.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/ULA.vhdl
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Unidade_Controle.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Waveform.vwf
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/Waveform1.vwf
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/assignment_defaults.qdf
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/aula8.qpf
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/aula8.qsf
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/aula8.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/bancoRegistradoresArqRegReg.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/conversorHex7Seg.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/decodificador2x4.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/divisorGenerico_e_Interface.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/flipflop.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/interface_botoes.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/interface_chaves.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/memoriaRAM.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/memoriaROM.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/mux.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/muxGenerico2x1.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/output_files/Waveform.vwf
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/registradorGenerico.vhd
+C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/somaConstante.vhd
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

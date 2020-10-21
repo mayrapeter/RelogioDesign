@@ -1,22 +1,26 @@
+zera_regs:
 MOVC REG_US $0
 MOVC REG_DS $0
 MOVC REG_UM $0
 MOVC REG_DM $0
 MOVC REG_UH $0
 MOVC REG_DH $0
+MOVC REG_14 $0
+JMP linha_store
 linha_while:
 MOVC REG_15 $2
 MOVC REG_11 $0
 LOAD REG_11 SW1
 CMP REG_11 REG_15
-JE linha_while
+JE pause
 MOVC REG_15 $3
 CMP REG_11 REG_15
-JE linha_while
+JE pause
 MOVC REG_15 $7
 CMP REG_11 REG_15
-JE linha_while
+JE pause
 MOVC REG_V1 $1
+STORE REG_14 LED
 LOAD REG_11 SW1
 CMP REG_11 REG_V1
 JE bt_rapida
@@ -50,6 +54,7 @@ MOVC REG_11 $2
 MOVC REG_12 $1 
 JMP continua 
 periodo_regular:
+MOVC REG_14 $0
 MOVC REG_11 $4
 MOVC REG_12 $2  
 continua:                                                  
@@ -68,6 +73,8 @@ JE else_segundo_d_2
 JMP else_minuto_U_1
 else_segundo_d_2:
 MOVC REG_DS $0
+adiciona_minuto:
+MOVC REG_V1 $1
 ADD REG_13 REG_V1 REG_UM
 MOVR REG_UM REG_13  
 else_minuto_U_1:
@@ -84,6 +91,8 @@ JE else_minuto_d_2
 JMP else_hora_u_1
 else_minuto_d_2:
 MOVC REG_DM $0
+adiciona_hora:
+MOVC REG_V1 $1
 ADD REG_13 REG_V1 REG_UH                                            
 MOVR REG_UH REG_13
 else_hora_u_1:
@@ -104,6 +113,16 @@ CMP REG_12 REG_DH
 JE else_hora_d_2
 JMP linha_store
 else_hora_d_2:
+MOVC REG_15 $0
+CMP REG_15 REG_14
+JE fica_um
+JMP fica_zero
+fica_um:
+MOVC REG_14 $255
+JMP zero
+fica_zero:
+MOVC REG_14 $0
+zero:
 MOVC REG_DH $0
 MOVC REG_UH $0
 linha_store:
@@ -113,7 +132,46 @@ STORE REG_UM LCD_UM
 STORE REG_DM LCD_DM
 STORE REG_UH LCD_UH
 STORE REG_DH LCD_DH
-MOVC REG_14 $0
-STORE REG_14 LIMPA_BASE_TEMPO_R
-STORE REG_14 LIMPA_BASE_TEMPO_N
+MOVC REG_15 $0
+STORE REG_15 LIMPA_BASE_TEMPO_R
+STORE REG_15 LIMPA_BASE_TEMPO_N
 JMP linha_while
+pause:
+MOVC REG_V1 $14
+LOAD REG_15 KEY
+CMP REG_15 REG_V1
+JE zera_regs
+but1:
+MOVC REG_V1 $13
+LOAD REG_15 KEY
+CMP REG_15 REG_V1
+JE checa_soltou_key1
+but2:
+MOVC REG_V1 $11
+LOAD REG_15 KEY
+CMP REG_15 REG_V1
+JE checa_soltou_key2
+MOVC REG_15 $2
+MOVC REG_11 $0
+LOAD REG_11 SW1
+CMP REG_11 REG_15
+JE pause
+MOVC REG_15 $3
+CMP REG_11 REG_15
+JE pause
+MOVC REG_15 $7
+CMP REG_11 REG_15
+JE pause
+JMP linha_while
+checa_soltou_key1:
+MOVC REG_V1 $15
+LOAD REG_15 KEY
+CMP REG_15 REG_V1
+JE adiciona_minuto
+JMP but1
+checa_soltou_key2:
+MOVC REG_V1 $15
+LOAD REG_15 KEY
+CMP REG_15 REG_V1
+JE adiciona_hora
+JMP but2
