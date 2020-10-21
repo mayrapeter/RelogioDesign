@@ -127,7 +127,11 @@ mem_address_dict = {
 	'LCD_UM':      '0000000010',
 	'LCD_DM':      '0000000011',
 	'LCD_UH':      '0000000100',
-	'LCD_DH':      '0000000101'
+	'LCD_DH':      '0000000101',
+	'KEY0':        '0000001101',
+	'KEY1':        '0000001110',
+	'KEY2':        '0000001111',
+	'KEY3':        '0000010000',
 }
 
 #abrindo o arquivo com o assembly a ser traduzido
@@ -137,7 +141,7 @@ with open('assembly.asm', 'r') as infile:
 	#adicionando o cabecalho necessario ao arquivo .mif para ser usado pela ROM
 	fin = open("binario.mif", "wt")
 	fin.write("WIDTH=26;\n")
-	fin.write("DEPTH=88;\n")
+	fin.write("DEPTH=200;\n")
 	fin.write("ADDRESS_RADIX=DEC;\n")
 	fin.write("DATA_RADIX=BIN; \n")
 	fin.write("CONTENT BEGIN\n")

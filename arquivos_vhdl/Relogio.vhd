@@ -29,6 +29,7 @@ architecture arch_name of Relogio is
 	signal habilita	: std_logic_vector(7 downto 0);
 	signal habilitaSW	: std_logic_vector(7 downto 0);
 	signal habilitaBT	: std_logic_vector(3 downto 0);
+	signal habilitaBotao	: std_logic_vector(3 downto 0);
 	signal dataOut, dataIn : std_logic_vector(7 downto 0);
 begin
   clk <= CLOCK_50;
@@ -54,7 +55,7 @@ begin
 						
   -- Decodificador que recebe o endereço e define os habilitas
   decodificador: entity work.Decoder
-						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW, habilitaBT => habilitaBT, habilitaLED => habilitaLED);
+						port map (Imediato => address, clk => clk, habilita => habilita, habilitaSW => habilitaSW, habilitaBT => habilitaBT, habilitaLED => habilitaLED,habilitaBotao => habilitaBotao);
 
   -- LCD
   display0 :  entity work.conversorHex7Seg
@@ -113,10 +114,19 @@ begin
 	 
   led : entity work.interface_leds
     port map(
+		clk		=> clk,
       entrada  => dataOut,
       saida    => LEDR(7 downto 0),
       habilita => habilitaLED,
 		w => w	
+    );
+	 
+   entradaBotoes : entity work.interface_botoes
+    port map(
+      entrada  => KEY(3 downto 0),
+      saida    => dataIn,
+      habilita => habilitaBotao(1),
+		r        =>r
     );
 	 
 					  

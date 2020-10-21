@@ -13,6 +13,7 @@ entity Decoder is
     habilita :  out  std_logic_vector(7 downto 0);
 	 habilitaSW: out  std_logic_vector(7 downto 0);
 	 habilitaBT: out std_logic_vector(3 downto 0);
+	 habilitaBotao: out  std_logic_vector(3 downto 0);
 	 habilitaLED: out std_logic
   );
 end entity;
@@ -41,5 +42,11 @@ begin
 					 "00000010" when Imediato = "0000001000" else   -- SW1
 					 "00000000";
 	habilitaLED <= '1' when Imediato = "0000001100" else '0';	-- led
+	
+	habilitaBotao<= "0001" when Imediato = "0000001101" else		-- KEY0
+						 "0010" when Imediato = "0000001110" else		-- KEY1
+						 "0100" when Imediato = "0000001111" else		-- KEY2
+						 "1000" when Imediato = "0000010000" else		-- KEY3
+						 "0000";
 						 
 end architecture;
