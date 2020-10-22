@@ -1,5 +1,5 @@
 Fitter report for aula8
-Wed Oct 21 21:32:20 2020
+Wed Oct 21 23:48:04 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -64,15 +64,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Oct 21 21:32:20 2020       ;
+; Fitter Status                   ; Successful - Wed Oct 21 23:48:04 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula8                                       ;
 ; Top-level Entity Name           ; Relogio                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 274 / 18,480 ( 1 % )                        ;
-; Total registers                 ; 254                                         ;
+; Logic utilization (in ALMs)     ; 279 / 18,480 ( 2 % )                        ;
+; Total registers                 ; 255                                         ;
 ; Total pins                      ; 65 / 224 ( 29 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -155,14 +155,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
+; Average used               ; 1.07        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.3%      ;
-;     Processor 3            ;   2.0%      ;
-;     Processor 4            ;   2.0%      ;
+;     Processor 2            ;   2.5%      ;
+;     Processor 3            ;   2.1%      ;
+;     Processor 4            ;   2.1%      ;
 +----------------------------+-------------+
 
 
@@ -183,15 +183,16 @@ https://fpgasoftware.intel.com/eula.
 ; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[8]                                     ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[8]~DUPLICATE                                     ;                  ;                       ;
 ; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[9]                                     ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[9]~DUPLICATE                                     ;                  ;                       ;
 ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[0]~DUPLICATE  ;                  ;                       ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[7]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[7]~DUPLICATE  ;                  ;                       ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[18] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[18]~DUPLICATE ;                  ;                       ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[20] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[20]~DUPLICATE ;                  ;                       ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[21] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[21]~DUPLICATE ;                  ;                       ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[10] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[10]~DUPLICATE ;                  ;                       ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[12] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[12]~DUPLICATE ;                  ;                       ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[24] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[24]~DUPLICATE ;                  ;                       ;
 ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[0]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[0]~DUPLICATE  ;                  ;                       ;
 ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[1]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[1]~DUPLICATE  ;                  ;                       ;
 ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[4]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[4]~DUPLICATE  ;                  ;                       ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[5]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[5]~DUPLICATE  ;                  ;                       ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[6]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[6]~DUPLICATE  ;                  ;                       ;
 ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[7]  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[7]~DUPLICATE  ;                  ;                       ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[13] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[13]~DUPLICATE ;                  ;                       ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[14] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[14]~DUPLICATE ;                  ;                       ;
 +---------------------------------------------------------------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+-------------------------------------------------------------------------------------------------------------+------------------+-----------------------+
 
 
@@ -212,8 +213,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 721 ) ; 0.00 % ( 0 / 721 )         ; 0.00 % ( 0 / 721 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 721 ) ; 0.00 % ( 0 / 721 )         ; 0.00 % ( 0 / 721 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 734 ) ; 0.00 % ( 0 / 734 )         ; 0.00 % ( 0 / 734 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 734 ) ; 0.00 % ( 0 / 734 )         ; 0.00 % ( 0 / 734 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -236,7 +237,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 721 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 734 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -244,7 +245,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/output_files/aula8.pin.
+The pin-out file can be found in C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/output_files/aula8.pin.
 
 
 +---------------------------------------------------------------------------------------------+
@@ -252,41 +253,41 @@ The pin-out file can be found in C:/Users/duda/Documents/Insper/6-semestre/Desig
 +-------------------------------------------------------------+-----------------------+-------+
 ; Resource                                                    ; Usage                 ; %     ;
 +-------------------------------------------------------------+-----------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 274 / 18,480          ; 1 %   ;
-; ALMs needed [=A-B+C]                                        ; 274                   ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 314 / 18,480          ; 2 %   ;
-;         [a] ALMs used for LUT logic and registers           ; 46                    ;       ;
-;         [b] ALMs used for LUT logic                         ; 197                   ;       ;
-;         [c] ALMs used for registers                         ; 71                    ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 279 / 18,480          ; 2 %   ;
+; ALMs needed [=A-B+C]                                        ; 279                   ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 311 / 18,480          ; 2 %   ;
+;         [a] ALMs used for LUT logic and registers           ; 53                    ;       ;
+;         [b] ALMs used for LUT logic                         ; 194                   ;       ;
+;         [c] ALMs used for registers                         ; 64                    ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 40 / 18,480           ; < 1 % ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18,480            ; 0 %   ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 33 / 18,480           ; < 1 % ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 1 / 18,480            ; < 1 % ;
 ;         [a] Due to location constrained logic               ; 0                     ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ;       ;
-;         [c] Due to LAB input limits                         ; 0                     ;       ;
+;         [c] Due to LAB input limits                         ; 1                     ;       ;
 ;         [d] Due to virtual I/Os                             ; 0                     ;       ;
 ;                                                             ;                       ;       ;
 ; Difficulty packing design                                   ; Low                   ;       ;
 ;                                                             ;                       ;       ;
-; Total LABs:  partially or completely used                   ; 43 / 1,848            ; 2 %   ;
-;     -- Logic LABs                                           ; 43                    ;       ;
+; Total LABs:  partially or completely used                   ; 42 / 1,848            ; 2 %   ;
+;     -- Logic LABs                                           ; 42                    ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ;       ;
 ;                                                             ;                       ;       ;
-; Combinational ALUT usage for logic                          ; 358                   ;       ;
-;     -- 7 input functions                                    ; 4                     ;       ;
-;     -- 6 input functions                                    ; 188                   ;       ;
-;     -- 5 input functions                                    ; 58                    ;       ;
-;     -- 4 input functions                                    ; 31                    ;       ;
-;     -- <=3 input functions                                  ; 77                    ;       ;
-; Combinational ALUT usage for route-throughs                 ; 32                    ;       ;
+; Combinational ALUT usage for logic                          ; 371                   ;       ;
+;     -- 7 input functions                                    ; 3                     ;       ;
+;     -- 6 input functions                                    ; 189                   ;       ;
+;     -- 5 input functions                                    ; 55                    ;       ;
+;     -- 4 input functions                                    ; 45                    ;       ;
+;     -- <=3 input functions                                  ; 79                    ;       ;
+; Combinational ALUT usage for route-throughs                 ; 36                    ;       ;
 ;                                                             ;                       ;       ;
-; Dedicated logic registers                                   ; 254                   ;       ;
+; Dedicated logic registers                                   ; 255                   ;       ;
 ;     -- By type:                                             ;                       ;       ;
-;         -- Primary logic registers                          ; 233 / 36,960          ; < 1 % ;
-;         -- Secondary logic registers                        ; 21 / 36,960           ; < 1 % ;
+;         -- Primary logic registers                          ; 232 / 36,960          ; < 1 % ;
+;         -- Secondary logic registers                        ; 23 / 36,960           ; < 1 % ;
 ;     -- By function:                                         ;                       ;       ;
 ;         -- Design implementation registers                  ; 234                   ;       ;
-;         -- Routing optimization registers                   ; 20                    ;       ;
+;         -- Routing optimization registers                   ; 21                    ;       ;
 ;                                                             ;                       ;       ;
 ; Virtual pins                                                ; 0                     ;       ;
 ; I/O pins                                                    ; 65 / 224              ; 29 %  ;
@@ -312,12 +313,12 @@ The pin-out file can be found in C:/Users/duda/Documents/Insper/6-semestre/Desig
 ; Remote update blocks                                        ; 0 / 1                 ; 0 %   ;
 ; Oscillator blocks                                           ; 0 / 1                 ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 3                 ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.7% / 0.7% / 0.6%    ;       ;
-; Peak interconnect usage (total/H/V)                         ; 11.5% / 11.5% / 11.6% ;       ;
-; Maximum fan-out                                             ; 250                   ;       ;
-; Highest non-global fan-out                                  ; 58                    ;       ;
-; Total fan-out                                               ; 2659                  ;       ;
-; Average fan-out                                             ; 3.43                  ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.6% / 0.7% / 0.6%    ;       ;
+; Peak interconnect usage (total/H/V)                         ; 10.6% / 10.7% / 10.1% ;       ;
+; Maximum fan-out                                             ; 251                   ;       ;
+; Highest non-global fan-out                                  ; 56                    ;       ;
+; Total fan-out                                               ; 2712                  ;       ;
+; Average fan-out                                             ; 3.42                  ;       ;
 +-------------------------------------------------------------+-----------------------+-------+
 
 
@@ -326,44 +327,44 @@ The pin-out file can be found in C:/Users/duda/Documents/Insper/6-semestre/Desig
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Statistic                                                   ; Top                   ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+-----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 274 / 18480 ( 1 % )   ; 0 / 18480 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 274                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 314 / 18480 ( 2 % )   ; 0 / 18480 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 46                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 197                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 71                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 279 / 18480 ( 2 % )   ; 0 / 18480 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 279                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 311 / 18480 ( 2 % )   ; 0 / 18480 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 53                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 194                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 64                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 40 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
-;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 18480 ( 0 % )     ; 0 / 18480 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 33 / 18480 ( < 1 % )  ; 0 / 18480 ( 0 % )              ;
+;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 1 / 18480 ( < 1 % )   ; 0 / 18480 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
-;         [c] Due to LAB input limits                         ; 0                     ; 0                              ;
+;         [c] Due to LAB input limits                         ; 1                     ; 0                              ;
 ;         [d] Due to virtual I/Os                             ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 43 / 1848 ( 2 % )     ; 0 / 1848 ( 0 % )               ;
-;     -- Logic LABs                                           ; 43                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 42 / 1848 ( 2 % )     ; 0 / 1848 ( 0 % )               ;
+;     -- Logic LABs                                           ; 42                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
-; Combinational ALUT usage for logic                          ; 358                   ; 0                              ;
-;     -- 7 input functions                                    ; 4                     ; 0                              ;
-;     -- 6 input functions                                    ; 188                   ; 0                              ;
-;     -- 5 input functions                                    ; 58                    ; 0                              ;
-;     -- 4 input functions                                    ; 31                    ; 0                              ;
-;     -- <=3 input functions                                  ; 77                    ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 32                    ; 0                              ;
+; Combinational ALUT usage for logic                          ; 371                   ; 0                              ;
+;     -- 7 input functions                                    ; 3                     ; 0                              ;
+;     -- 6 input functions                                    ; 189                   ; 0                              ;
+;     -- 5 input functions                                    ; 55                    ; 0                              ;
+;     -- 4 input functions                                    ; 45                    ; 0                              ;
+;     -- <=3 input functions                                  ; 79                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 36                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
-;         -- Primary logic registers                          ; 233 / 36960 ( < 1 % ) ; 0 / 36960 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 21 / 36960 ( < 1 % )  ; 0 / 36960 ( 0 % )              ;
+;         -- Primary logic registers                          ; 232 / 36960 ( < 1 % ) ; 0 / 36960 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 23 / 36960 ( < 1 % )  ; 0 / 36960 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
 ;         -- Design implementation registers                  ; 234                   ; 0                              ;
-;         -- Routing optimization registers                   ; 20                    ; 0                              ;
+;         -- Routing optimization registers                   ; 21                    ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
 ; Virtual pins                                                ; 0                     ; 0                              ;
@@ -380,8 +381,8 @@ The pin-out file can be found in C:/Users/duda/Documents/Insper/6-semestre/Desig
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 2659                  ; 0                              ;
-;     -- Registered Connections                               ; 1000                  ; 0                              ;
+;     -- Total Connections                                    ; 2712                  ; 0                              ;
+;     -- Registered Connections                               ; 1040                  ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
 ;     -- Top                                                  ; 0                     ; 0                              ;
@@ -413,7 +414,7 @@ The pin-out file can be found in C:/Users/duda/Documents/Insper/6-semestre/Desig
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; CLOCK_50 ; M9    ; 3B       ; 22           ; 0            ; 0            ; 252                   ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; CLOCK_50 ; M9    ; 3B       ; 22           ; 0            ; 0            ; 253                   ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; KEY[0]   ; U7    ; 3A       ; 10           ; 0            ; 91           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; KEY[1]   ; W9    ; 3A       ; 11           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; KEY[2]   ; M7    ; 3A       ; 14           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
@@ -1076,35 +1077,35 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                      ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |Relogio                                                        ; 273.5 (0.5)          ; 313.5 (0.5)                      ; 40.0 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 358 (1)             ; 254 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 65   ; 0            ; |Relogio                                                                                       ; Relogio                           ; work         ;
-;    |Decoder:decodificador|                                      ; 4.2 (4.2)            ; 4.5 (4.5)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Decoder:decodificador                                                                 ; Decoder                           ; work         ;
-;    |Processador:CPU|                                            ; 214.0 (0.0)          ; 247.7 (0.0)                      ; 33.7 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 276 (0)             ; 150 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU                                                                       ; Processador                       ; work         ;
-;       |Fluxo_Dados:FD|                                          ; 205.3 (0.0)          ; 240.5 (0.0)                      ; 35.2 (0.0)                                        ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 265 (0)             ; 150 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD                                                        ; Fluxo_Dados                       ; work         ;
+; |Relogio                                                        ; 279.0 (0.5)          ; 310.0 (0.5)                      ; 31.5 (0.0)                                        ; 0.5 (0.0)                        ; 0.0 (0.0)            ; 371 (1)             ; 255 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 65   ; 0            ; |Relogio                                                                                       ; Relogio                           ; work         ;
+;    |Decoder:decodificador|                                      ; 2.7 (2.7)            ; 2.7 (2.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 4 (4)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Decoder:decodificador                                                                 ; Decoder                           ; work         ;
+;    |Processador:CPU|                                            ; 228.0 (0.0)          ; 248.7 (0.0)                      ; 21.0 (0.0)                                        ; 0.4 (0.0)                        ; 0.0 (0.0)            ; 295 (0)             ; 150 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU                                                                       ; Processador                       ; work         ;
+;       |Fluxo_Dados:FD|                                          ; 220.4 (0.0)          ; 241.0 (0.0)                      ; 21.0 (0.0)                                        ; 0.4 (0.0)                        ; 0.0 (0.0)            ; 284 (0)             ; 150 (0)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD                                                        ; Fluxo_Dados                       ; work         ;
 ;          |ULA:ULA|                                              ; 7.0 (7.0)            ; 7.0 (7.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 15 (15)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|ULA:ULA                                                ; ULA                               ; work         ;
-;          |bancoRegistradoresArqRegReg:bancoReg|                 ; 93.5 (93.5)          ; 117.6 (117.6)                    ; 24.1 (24.1)                                       ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 96 (96)             ; 128 (128)                 ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg                   ; bancoRegistradoresArqRegReg       ; work         ;
+;          |bancoRegistradoresArqRegReg:bancoReg|                 ; 94.4 (94.4)          ; 109.8 (109.8)                    ; 15.7 (15.7)                                       ; 0.4 (0.4)                        ; 0.0 (0.0)            ; 98 (98)             ; 128 (128)                 ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg                   ; bancoRegistradoresArqRegReg       ; work         ;
 ;          |flipflop:flipflopN|                                   ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopN                                     ; flipflop                          ; work         ;
 ;          |flipflop:flipflopZ|                                   ; 0.3 (0.3)            ; 0.3 (0.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ                                     ; flipflop                          ; work         ;
-;          |memoriaROM:ROM|                                       ; 88.7 (88.7)          ; 96.0 (96.0)                      ; 7.3 (7.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 125 (125)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|memoriaROM:ROM                                         ; memoriaROM                        ; work         ;
-;          |muxGenerico2x1:muxProxPC|                             ; 0.4 (0.4)            ; 0.4 (0.4)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxProxPC                               ; muxGenerico2x1                    ; work         ;
-;          |muxGenerico2x1:muxULA_ImediatoRAM|                    ; 9.0 (9.0)            ; 12.3 (12.3)                      ; 3.3 (3.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 17 (17)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM                      ; muxGenerico2x1                    ; work         ;
-;          |registradorGenerico:PC|                               ; 2.5 (2.5)            ; 4.0 (4.0)                        ; 1.5 (1.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 20 (20)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC                                 ; registradorGenerico               ; work         ;
-;          |somaConstante:somaConstante|                          ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|somaConstante:somaConstante                            ; somaConstante                     ; work         ;
-;       |Unidade_Controle:UC|                                     ; 7.2 (7.2)            ; 7.2 (7.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (11)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Unidade_Controle:UC                                                   ; Unidade_Controle                  ; work         ;
-;    |conversorHex7Seg:display0|                                  ; 5.5 (5.5)            ; 5.5 (5.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display0                                                             ; conversorHex7Seg                  ; work         ;
-;    |conversorHex7Seg:display1|                                  ; 3.3 (3.3)            ; 4.7 (4.7)                        ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display1                                                             ; conversorHex7Seg                  ; work         ;
-;    |conversorHex7Seg:display2|                                  ; 3.3 (3.3)            ; 4.5 (4.5)                        ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display2                                                             ; conversorHex7Seg                  ; work         ;
-;    |conversorHex7Seg:display3|                                  ; 2.8 (2.8)            ; 2.8 (2.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display3                                                             ; conversorHex7Seg                  ; work         ;
-;    |conversorHex7Seg:display4|                                  ; 2.8 (2.8)            ; 3.0 (3.0)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display4                                                             ; conversorHex7Seg                  ; work         ;
-;    |conversorHex7Seg:display5|                                  ; 2.8 (2.8)            ; 3.5 (3.5)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display5                                                             ; conversorHex7Seg                  ; work         ;
-;    |divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal| ; 18.3 (0.0)           ; 18.3 (0.0)                       ; 0.1 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 32 (0)              ; 32 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal                            ; divisorGenerico_e_Interface_Paulo ; work         ;
-;       |divisorGenerico:baseTempo|                               ; 18.0 (18.0)          ; 18.0 (18.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 31 (31)             ; 31 (31)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo  ; divisorGenerico                   ; work         ;
-;       |flipflop:registraUmSegundo|                              ; 0.0 (0.0)            ; 0.3 (0.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|flipflop:registraUmSegundo ; flipflop                          ; work         ;
-;    |divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida| ; 9.8 (0.0)            ; 12.7 (0.0)                       ; 2.9 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (0)              ; 22 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida                            ; divisorGenerico_e_Interface_Paulo ; work         ;
-;       |divisorGenerico:baseTempo|                               ; 9.8 (9.8)            ; 12.0 (12.0)                      ; 2.3 (2.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 21 (21)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo  ; divisorGenerico                   ; work         ;
-;       |flipflop:registraUmSegundo|                              ; 0.0 (0.0)            ; 0.7 (0.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|flipflop:registraUmSegundo ; flipflop                          ; work         ;
+;          |memoriaROM:ROM|                                       ; 103.5 (103.5)        ; 107.6 (107.6)                    ; 4.1 (4.1)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 142 (142)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|memoriaROM:ROM                                         ; memoriaROM                        ; work         ;
+;          |muxGenerico2x1:muxProxPC|                             ; 0.2 (0.2)            ; 0.2 (0.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxProxPC                               ; muxGenerico2x1                    ; work         ;
+;          |muxGenerico2x1:muxULA_ImediatoRAM|                    ; 8.3 (8.3)            ; 10.0 (10.0)                      ; 1.7 (1.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 17 (17)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM                      ; muxGenerico2x1                    ; work         ;
+;          |registradorGenerico:PC|                               ; 2.6 (2.6)            ; 3.5 (3.5)                        ; 0.9 (0.9)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 20 (20)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC                                 ; registradorGenerico               ; work         ;
+;          |somaConstante:somaConstante|                          ; 2.3 (2.3)            ; 2.3 (2.3)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Fluxo_Dados:FD|somaConstante:somaConstante                            ; somaConstante                     ; work         ;
+;       |Unidade_Controle:UC|                                     ; 7.7 (7.7)            ; 7.7 (7.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 11 (11)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|Processador:CPU|Unidade_Controle:UC                                                   ; Unidade_Controle                  ; work         ;
+;    |conversorHex7Seg:display0|                                  ; 4.6 (4.6)            ; 6.0 (6.0)                        ; 1.4 (1.4)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 9 (9)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display0                                                             ; conversorHex7Seg                  ; work         ;
+;    |conversorHex7Seg:display1|                                  ; 1.7 (1.7)            ; 3.5 (3.5)                        ; 1.8 (1.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display1                                                             ; conversorHex7Seg                  ; work         ;
+;    |conversorHex7Seg:display2|                                  ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display2                                                             ; conversorHex7Seg                  ; work         ;
+;    |conversorHex7Seg:display3|                                  ; 1.8 (1.8)            ; 3.5 (3.5)                        ; 1.7 (1.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display3                                                             ; conversorHex7Seg                  ; work         ;
+;    |conversorHex7Seg:display4|                                  ; 2.5 (2.5)            ; 3.3 (3.3)                        ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display4                                                             ; conversorHex7Seg                  ; work         ;
+;    |conversorHex7Seg:display5|                                  ; 2.4 (2.4)            ; 3.6 (3.6)                        ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|conversorHex7Seg:display5                                                             ; conversorHex7Seg                  ; work         ;
+;    |divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal| ; 17.1 (0.0)           ; 18.3 (0.0)                       ; 1.2 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 32 (0)              ; 31 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal                            ; divisorGenerico_e_Interface_Paulo ; work         ;
+;       |divisorGenerico:baseTempo|                               ; 17.1 (17.1)          ; 17.7 (17.7)                      ; 0.6 (0.6)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 31 (31)             ; 30 (30)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo  ; divisorGenerico                   ; work         ;
+;       |flipflop:registraUmSegundo|                              ; 0.0 (0.0)            ; 0.7 (0.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|flipflop:registraUmSegundo ; flipflop                          ; work         ;
+;    |divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida| ; 9.6 (0.0)            ; 11.3 (0.0)                       ; 1.7 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (0)              ; 24 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida                            ; divisorGenerico_e_Interface_Paulo ; work         ;
+;       |divisorGenerico:baseTempo|                               ; 9.8 (9.8)            ; 11.0 (11.0)                      ; 1.2 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 20 (20)             ; 23 (23)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo  ; divisorGenerico                   ; work         ;
+;       |flipflop:registraUmSegundo|                              ; -0.2 (-0.2)          ; 0.3 (0.3)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 1 (1)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|flipflop:registraUmSegundo ; flipflop                          ; work         ;
 ;    |interface_botoes:entradaBotoes|                             ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|interface_botoes:entradaBotoes                                                        ; interface_botoes                  ; work         ;
-;    |interface_chavesSW1:SW1|                                    ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|interface_chavesSW1:SW1                                                               ; interface_chavesSW1               ; work         ;
-;    |interface_leds:led|                                         ; 4.2 (4.2)            ; 4.3 (4.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|interface_leds:led                                                                    ; interface_leds                    ; work         ;
+;    |interface_chavesSW1:SW1|                                    ; 1.0 (1.0)            ; 1.5 (1.5)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|interface_chavesSW1:SW1                                                               ; interface_chavesSW1               ; work         ;
+;    |interface_leds:led|                                         ; 3.5 (3.5)            ; 3.7 (3.7)                        ; 0.3 (0.3)                                         ; 0.1 (0.1)                        ; 0.0 (0.0)            ; 1 (1)               ; 8 (8)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |Relogio|interface_leds:led                                                                    ; interface_leds                    ; work         ;
 +-----------------------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1166,15 +1167,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[7]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[8]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; LEDR[9]  ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; CLOCK_50 ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; CLOCK_50 ; Input    ; -- ; (0)  ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[3]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; KEY[3]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; SW[1]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[1]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; SW[1]    ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[1]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[2]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[2]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[2]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[0]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; KEY[0]   ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; KEY[0]   ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[4]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[5]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; SW[6]    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
@@ -1188,24 +1189,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                                                              ; Pad To Core Index ; Setting ;
 +--------------------------------------------------------------------------------------------------+-------------------+---------+
 ; CLOCK_50                                                                                         ;                   ;         ;
-;      - divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 0                 ; 0       ;
-;      - divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 0                 ; 0       ;
+;      - divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 1                 ; 0       ;
+;      - divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 1                 ; 0       ;
 ; SW[3]                                                                                            ;                   ;         ;
 ;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[3]~0           ; 0                 ; 0       ;
 ; KEY[3]                                                                                           ;                   ;         ;
 ;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[3]~0           ; 0                 ; 0       ;
 ; SW[1]                                                                                            ;                   ;         ;
-;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[1]~2           ; 0                 ; 0       ;
+;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[1]~2           ; 1                 ; 0       ;
 ; KEY[1]                                                                                           ;                   ;         ;
-;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[1]~2           ; 0                 ; 0       ;
+;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[1]~2           ; 1                 ; 0       ;
 ; SW[2]                                                                                            ;                   ;         ;
 ;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[2]~4           ; 0                 ; 0       ;
 ; KEY[2]                                                                                           ;                   ;         ;
-;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[2]~4           ; 0                 ; 0       ;
+;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[2]~4           ; 1                 ; 0       ;
 ; SW[0]                                                                                            ;                   ;         ;
 ;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[0]~7           ; 0                 ; 0       ;
 ; KEY[0]                                                                                           ;                   ;         ;
-;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[0]~7           ; 0                 ; 0       ;
+;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[0]~7           ; 1                 ; 0       ;
 ; SW[4]                                                                                            ;                   ;         ;
 ;      - Processador:CPU|Fluxo_Dados:FD|muxGenerico2x1:muxULA_ImediatoRAM|saida_MUX[4]~9           ; 0                 ; 0       ;
 ; SW[5]                                                                                            ;                   ;         ;
@@ -1223,37 +1224,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                          ; Location            ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; CLOCK_50                                                                                      ; PIN_M9              ; 3       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; CLOCK_50                                                                                      ; PIN_M9              ; 250     ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; Decoder:decodificador|Equal7~4                                                                ; MLABCELL_X34_Y3_N18 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; Decoder:decodificador|Equal9~0                                                                ; LABCELL_X35_Y3_N42  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~181           ; LABCELL_X41_Y5_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~182           ; LABCELL_X41_Y6_N27  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~183           ; LABCELL_X41_Y3_N9   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~184           ; LABCELL_X41_Y6_N48  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~185           ; LABCELL_X41_Y6_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~186           ; LABCELL_X41_Y6_N42  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~187           ; LABCELL_X41_Y3_N51  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~188           ; LABCELL_X35_Y6_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~189           ; LABCELL_X39_Y3_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~190           ; LABCELL_X35_Y4_N18  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~191           ; LABCELL_X39_Y6_N24  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~192           ; LABCELL_X41_Y3_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~193           ; LABCELL_X39_Y5_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~194           ; LABCELL_X39_Y5_N30  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~195           ; MLABCELL_X37_Y4_N39 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~196           ; LABCELL_X41_Y3_N24  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; Processador:CPU|Unidade_Controle:UC|palavraControle[8]~3                                      ; LABCELL_X39_Y4_N0   ; 18      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; conversorHex7Seg:display0|process_0~1                                                         ; MLABCELL_X34_Y3_N0  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; conversorHex7Seg:display1|process_0~1                                                         ; LABCELL_X36_Y2_N42  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; conversorHex7Seg:display2|process_0~1                                                         ; LABCELL_X36_Y2_N57  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; conversorHex7Seg:display3|process_0~0                                                         ; LABCELL_X36_Y2_N33  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; conversorHex7Seg:display4|process_0~0                                                         ; LABCELL_X36_Y2_N6   ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; conversorHex7Seg:display5|process_0~1                                                         ; LABCELL_X36_Y2_N36  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|Equal0~4 ; MLABCELL_X34_Y2_N54 ; 31      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick     ; FF_X35_Y2_N37       ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|Equal0~3 ; LABCELL_X26_Y3_N39  ; 21      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick     ; FF_X25_Y3_N50       ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; interface_leds:led|saida_temp~1                                                               ; LABCELL_X36_Y2_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                                                                                      ; PIN_M9              ; 251     ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; Decoder:decodificador|Equal7~2                                                                ; MLABCELL_X37_Y4_N36 ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; Decoder:decodificador|Equal9~0                                                                ; MLABCELL_X37_Y4_N6  ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~182           ; LABCELL_X39_Y7_N12  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~183           ; LABCELL_X41_Y7_N21  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~185           ; MLABCELL_X42_Y4_N51 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~186           ; MLABCELL_X42_Y4_N15 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~187           ; MLABCELL_X42_Y4_N33 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~188           ; LABCELL_X43_Y4_N6   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~189           ; MLABCELL_X42_Y4_N54 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~190           ; MLABCELL_X42_Y4_N18 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~191           ; MLABCELL_X42_Y4_N3  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~192           ; MLABCELL_X42_Y4_N57 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~193           ; LABCELL_X41_Y7_N3   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~194           ; LABCELL_X41_Y7_N0   ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~195           ; MLABCELL_X42_Y4_N0  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~196           ; MLABCELL_X42_Y4_N21 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~197           ; MLABCELL_X42_Y4_N12 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~198           ; MLABCELL_X42_Y4_N48 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; Processador:CPU|Unidade_Controle:UC|palavraControle[8]~4                                      ; MLABCELL_X37_Y5_N54 ; 18      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; conversorHex7Seg:display0|process_0~1                                                         ; LABCELL_X41_Y2_N12  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; conversorHex7Seg:display1|process_0~0                                                         ; LABCELL_X39_Y2_N12  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; conversorHex7Seg:display2|process_0~0                                                         ; LABCELL_X40_Y2_N42  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; conversorHex7Seg:display3|process_0~0                                                         ; LABCELL_X40_Y2_N21  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; conversorHex7Seg:display4|process_0~0                                                         ; LABCELL_X41_Y2_N24  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; conversorHex7Seg:display5|process_0~0                                                         ; LABCELL_X40_Y2_N3   ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|Equal0~4 ; LABCELL_X43_Y4_N12  ; 30      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick     ; FF_X43_Y4_N22       ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|Equal0~3 ; MLABCELL_X34_Y5_N48 ; 23      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick     ; FF_X34_Y5_N56       ; 2       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; interface_leds:led|saida_temp~0                                                               ; LABCELL_X39_Y3_N33  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------------------------------------------------------------------+---------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1262,7 +1263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------+----------------------+------------------+---------------------------+
 ; Name     ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------+----------+---------+----------------------+------------------+---------------------------+
-; CLOCK_50 ; PIN_M9   ; 250     ; Global Clock         ; GCLK6            ; --                        ;
+; CLOCK_50 ; PIN_M9   ; 251     ; Global Clock         ; GCLK6            ; --                        ;
 +----------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1271,22 +1272,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+---------------------------+
 ; Routing Resource Type        ; Usage                     ;
 +------------------------------+---------------------------+
-; Block interconnects          ; 1,030 / 140,056 ( < 1 % ) ;
-; C12 interconnects            ; 4 / 6,048 ( < 1 % )       ;
-; C2 interconnects             ; 408 / 54,648 ( < 1 % )    ;
-; C4 interconnects             ; 216 / 25,920 ( < 1 % )    ;
+; Block interconnects          ; 1,020 / 140,056 ( < 1 % ) ;
+; C12 interconnects            ; 12 / 6,048 ( < 1 % )      ;
+; C2 interconnects             ; 375 / 54,648 ( < 1 % )    ;
+; C4 interconnects             ; 187 / 25,920 ( < 1 % )    ;
 ; DQS bus muxes                ; 0 / 17 ( 0 % )            ;
 ; DQS-18 I/O buses             ; 0 / 17 ( 0 % )            ;
 ; DQS-9 I/O buses              ; 0 / 17 ( 0 % )            ;
-; Direct links                 ; 108 / 140,056 ( < 1 % )   ;
+; Direct links                 ; 86 / 140,056 ( < 1 % )    ;
 ; Global clocks                ; 1 / 16 ( 6 % )            ;
-; Local interconnects          ; 248 / 36,960 ( < 1 % )    ;
+; Local interconnects          ; 250 / 36,960 ( < 1 % )    ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )            ;
-; R14 interconnects            ; 60 / 5,984 ( 1 % )        ;
-; R14/C12 interconnect drivers ; 62 / 9,504 ( < 1 % )      ;
-; R3 interconnects             ; 489 / 60,192 ( < 1 % )    ;
-; R6 interconnects             ; 543 / 127,072 ( < 1 % )   ;
-; Spine clocks                 ; 2 / 120 ( 2 % )           ;
+; R14 interconnects            ; 64 / 5,984 ( 1 % )        ;
+; R14/C12 interconnect drivers ; 68 / 9,504 ( < 1 % )      ;
+; R3 interconnects             ; 455 / 60,192 ( < 1 % )    ;
+; R6 interconnects             ; 514 / 127,072 ( < 1 % )   ;
+; Spine clocks                 ; 1 / 120 ( < 1 % )         ;
 ; Wire stub REs                ; 0 / 7,344 ( 0 % )         ;
 +------------------------------+---------------------------+
 
@@ -1466,8 +1467,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+-------------------+
 ; Source Clock(s)                                                                                                                                                                                  ; Destination Clock(s) ; Delay Added in ns ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+-------------------+
-; CLOCK_50,divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick,divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick,I/O ; CLOCK_50             ; 17.1              ;
-; CLOCK_50                                                                                                                                                                                         ; CLOCK_50             ; 17.0              ;
+; CLOCK_50                                                                                                                                                                                         ; CLOCK_50             ; 17.7              ;
+; CLOCK_50,divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick,divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick,I/O ; CLOCK_50             ; 13.7              ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1478,105 +1479,108 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-------------------+
 ; Source Register                                                                                   ; Destination Register                                                                      ; Delay Added in ns ;
 +---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-------------------+
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick         ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 5.281             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick         ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 4.326             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|flipflop:registraUmSegundo|DOUT        ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.930             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|flipflop:registraUmSegundo|DOUT        ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.716             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[24] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[22] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[23] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[21] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[20] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[19] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[18] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[17] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[15] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[14] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[13] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[12] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[11] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[10] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[9]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[8]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[7]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[6]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[5]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[4]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[3]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[2]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[1]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[0]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[16] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.647             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[14] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[12] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[11] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[10] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[9]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[8]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[7]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[6]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[5]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[13] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[3]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[2]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[1]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[0]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[4]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.163             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[9]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[8]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[0]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[2]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[6]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[1]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[7]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[5]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[3]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[4]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 2.121             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~13                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.702             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~21                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.373             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~29                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.373             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.373             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~45                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~53                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~61                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~77                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~85                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~93                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~101               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~109               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~117               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~125               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; SW[0]                                                                                             ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; KEY[0]                                                                                            ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~133               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69        ; 1.312             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~112               ; interface_leds:led|saida[3]                                                               ; 0.650             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~111               ; interface_leds:led|saida[2]                                                               ; 0.644             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~16                ; interface_leds:led|saida[3]                                                               ; 0.617             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~15                ; interface_leds:led|saida[2]                                                               ; 0.612             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~97                ; interface_leds:led|saida[4]                                                               ; 0.540             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~120               ; interface_leds:led|saida[3]                                                               ; 0.520             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~99                ; interface_leds:led|saida[6]                                                               ; 0.508             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~121               ; interface_leds:led|saida[4]                                                               ; 0.484             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~127               ; interface_leds:led|saida[2]                                                               ; 0.465             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~123               ; interface_leds:led|saida[6]                                                               ; 0.446             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~56                ; interface_leds:led|saida[3]                                                               ; 0.432             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~35                ; interface_leds:led|saida[6]                                                               ; 0.389             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~19                ; interface_leds:led|saida[6]                                                               ; 0.369             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~80                ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.335             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~48                ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.213             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~24                ; interface_leds:led|saida[3]                                                               ; 0.095             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~88                ; interface_leds:led|saida[3]                                                               ; 0.095             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~32                ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.044             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~64                ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.044             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~96                ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.044             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~128               ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.044             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~40                ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.044             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~72                ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.044             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~104               ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.044             ;
-; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~136               ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopZ|DOUT                                    ; 0.044             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick         ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 5.541             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick         ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 5.135             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[24] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[22] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[23] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[21] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[20] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[19] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[18] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[17] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[15] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[14] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[13] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[12] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[11] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[10] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[9]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[8]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[7]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[6]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[5]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[4]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[3]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[2]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[1]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[0]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|contador[16] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|divisorGenerico:baseTempo|tick ; 2.777             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[14] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[12] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[11] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[10] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[9]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[8]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[7]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[6]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[5]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[13] ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[3]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[2]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[1]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[0]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|contador[4]  ; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|divisorGenerico:baseTempo|tick ; 2.574             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoRapida|flipflop:registraUmSegundo|DOUT        ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 2.515             ;
+; divisorGenerico_e_Interface_Paulo:interfaceBaseTempoNormal|flipflop:registraUmSegundo|DOUT        ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 2.504             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[9]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[8]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[0]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[7]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[2]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[6]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[1]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[4]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[3]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|registradorGenerico:PC|DOUT[5]                                     ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.846             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~125               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.576             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~13                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.544             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~109               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.250             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~117               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.250             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~133               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.250             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~21                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.241             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~29                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.241             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.241             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~45                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~53                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~61                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~69                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~77                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~85                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~93                ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~101               ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; SW[0]                                                                                             ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; KEY[0]                                                                                            ; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~37        ; 1.174             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~22                ; interface_leds:led|saida[1]                                                               ; 0.550             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~47                ; interface_leds:led|saida[2]                                                               ; 0.502             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~112               ; interface_leds:led|saida[3]                                                               ; 0.479             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~80                ; interface_leds:led|saida[3]                                                               ; 0.477             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~16                ; interface_leds:led|saida[3]                                                               ; 0.445             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~17                ; interface_leds:led|saida[4]                                                               ; 0.426             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~49                ; interface_leds:led|saida[4]                                                               ; 0.403             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~114               ; interface_leds:led|saida[5]                                                               ; 0.372             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~82                ; interface_leds:led|saida[5]                                                               ; 0.369             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~84                ; interface_leds:led|saida[7]                                                               ; 0.351             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~116               ; interface_leds:led|saida[7]                                                               ; 0.351             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~18                ; interface_leds:led|saida[5]                                                               ; 0.336             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~31                ; interface_leds:led|saida[2]                                                               ; 0.273             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~127               ; interface_leds:led|saida[2]                                                               ; 0.247             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~106               ; interface_leds:led|saida[5]                                                               ; 0.211             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~108               ; interface_leds:led|saida[7]                                                               ; 0.204             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~129               ; interface_leds:led|saida[4]                                                               ; 0.154             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~103               ; Processador:CPU|Fluxo_Dados:FD|flipflop:flipflopN|DOUT                                    ; 0.142             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~15                ; interface_leds:led|saida[2]                                                               ; 0.115             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~23                ; interface_leds:led|saida[2]                                                               ; 0.115             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~39                ; interface_leds:led|saida[2]                                                               ; 0.115             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~20                ; interface_leds:led|saida[7]                                                               ; 0.089             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~52                ; interface_leds:led|saida[7]                                                               ; 0.089             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~111               ; interface_leds:led|saida[2]                                                               ; 0.073             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~119               ; interface_leds:led|saida[2]                                                               ; 0.073             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~135               ; interface_leds:led|saida[2]                                                               ; 0.073             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~113               ; interface_leds:led|saida[4]                                                               ; 0.064             ;
+; Processador:CPU|Fluxo_Dados:FD|bancoRegistradoresArqRegReg:bancoReg|registrador~121               ; interface_leds:led|saida[4]                                                               ; 0.064             ;
 +---------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 97 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1605,37 +1609,37 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "FPGA_RESET_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[8]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "SW[9]" is assigned to location or region, but does not exist in design
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:06
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:07
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:03
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 8% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
+    Info (170196): Router estimated peak interconnect usage is 7% of the available device resources in the region that extends from location X33_Y0 to location X43_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
-Info (11888): Total time spent on timing analysis during the Fitter is 1.39 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:07
+Info (11888): Total time spent on timing analysis during the Fitter is 1.55 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:04
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/output_files/aula8.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/output_files/aula8.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 6282 megabytes
-    Info: Processing ended: Wed Oct 21 21:32:21 2020
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:01:07
+    Info: Peak virtual memory: 6284 megabytes
+    Info: Processing ended: Wed Oct 21 23:48:05 2020
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:01:14
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/output_files/aula8.fit.smsg.
+The suppressed messages can be found in C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/output_files/aula8.fit.smsg.
 
 
