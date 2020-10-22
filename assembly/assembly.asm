@@ -29,13 +29,13 @@ CMP REG_11 REG_15
 JE bt_rapida
 JMP bt_normal
 bt_rapida:
-LOAD REG_8 LE_BASE_TEMPO_R
-CMP REG_8 REG_V1
+LOAD REG_BT LE_BASE_TEMPO_R
+CMP REG_BT REG_V1
 JE passou_um_segundo
 JMP linha_while
 bt_normal:
-LOAD REG_8 LE_BASE_TEMPO_N
-CMP REG_8 REG_V1
+LOAD REG_BT LE_BASE_TEMPO_N
+CMP REG_BT REG_V1
 JE passou_um_segundo
 JMP linha_while
 passou_um_segundo: 
@@ -46,17 +46,44 @@ MOVC REG_15 $5
 CMP REG_11 REG_15   
 JE meio_periodo  
 MOVC REG_15 $4
-CMP REG_11 REG_15   
+CMP REG_11 REG_15  
 JE meio_periodo 
 JMP periodo_regular                                      
 meio_periodo:
+MOVC REG_AP $1
 MOVC REG_11 $2
-MOVC REG_12 $1 
-JMP continua 
+MOVC REG_12 $1
+CMP REG_UH REG_11
+JL continua
+CMP REG_DH REG_12
+JL continua
+MOVC REG_V1 $2
+SUB REG_13 REG_UH REG_V1
+MOVR REG_UH REG_13
+MOVC REG_V1 $1
+SUB REG_13 REG_DH REG_V1
+MOVR REG_DH REG_13
+MOVC REG_14 $1
+JMP continua
 periodo_regular:
-MOVC REG_14 $0
 MOVC REG_11 $4
-MOVC REG_12 $2  
+MOVC REG_12 $2
+MOVC REG_V1 $1
+CMP REG_14 REG_V1
+JE ant_am
+JMP continua
+ant_am:
+CMP REG_AP REG_V1
+JE aumtemp
+JMP continua
+aumtemp:
+MOVC REG_V1 $2
+ADD REG_13 REG_UH REG_V1
+MOVR REG_UH REG_13
+MOVC REG_V1 $1
+ADD REG_13 REG_DH REG_V1
+MOVR REG_DH REG_13
+MOVC REG_AP $0
 continua:                                                  
 ADD REG_13 REG_V1 REG_US
 MOVR REG_US REG_13    
@@ -118,7 +145,7 @@ CMP REG_15 REG_14
 JE fica_um
 JMP fica_zero
 fica_um:
-MOVC REG_14 $255
+MOVC REG_14 $1
 JMP zero
 fica_zero:
 MOVC REG_14 $0

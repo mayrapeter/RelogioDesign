@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEBA4F23) Path("C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/output_files/") File("aula8.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEBA4F23) Path("C:/Users/duda/Documents/Insper/6-semestre/Design_comp/Relogio/RelogioDesign/arquivos_vhdl/output_files/") File("aula8.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
