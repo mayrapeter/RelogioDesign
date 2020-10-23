@@ -55,16 +55,32 @@ JE meio_periodo
 JMP periodo_regular                                      
 meio_periodo:
 MOVC REG_AP $1
-MOVC REG_11 $2
+MOVC REG_11 $3
 MOVC REG_12 $1
-CMP REG_UH REG_11
-JL continua
+MOVC REG_V1 $3
+CMP REG_UH REG_V1
+JL checadecimal
 CMP REG_DH REG_12
 JL continua
+JMP normaldiminui
+checadecimal:
+CMP REG_DH REG_V1
+JE menordiminui
+JMP continua
+normaldiminui:
 MOVC REG_V1 $2
 SUB REG_13 REG_UH REG_V1
 MOVR REG_UH REG_13
 MOVC REG_V1 $1
+SUB REG_13 REG_DH REG_V1
+MOVR REG_DH REG_13
+MOVC REG_14 $1
+JMP continua
+menordiminui:
+MOVC REG_V1 $8
+ADD REG_13 REG_UH REG_V1
+MOVR REG_UH REG_13
+MOVC REG_V1 $2
 SUB REG_13 REG_DH REG_V1
 MOVR REG_DH REG_13
 MOVC REG_14 $1
@@ -81,6 +97,9 @@ CMP REG_AP REG_V1
 JE aumtemp
 JMP continua
 aumtemp:
+MOVC REG_V1 $9
+CMP REG_UH REG_V1
+JE somaespecial
 MOVC REG_V1 $2
 ADD REG_13 REG_UH REG_V1
 MOVR REG_UH REG_13
@@ -88,7 +107,17 @@ MOVC REG_V1 $1
 ADD REG_13 REG_DH REG_V1
 MOVR REG_DH REG_13
 MOVC REG_AP $0
-continua:                                                  
+JMP continua
+somaespecial:
+MOVC REG_V1 $8
+SUB REG_13 REG_UH REG_V1
+MOVR REG_UH REG_13
+MOVC REG_V1 $2
+ADD REG_13 REG_DH REG_V1
+MOVR REG_DH REG_13
+MOVC REG_AP $0
+continua:
+MOVC REG_V1 $1                                                  
 ADD REG_13 REG_V1 REG_US
 MOVR REG_US REG_13    
 CMP REG_10 REG_US   
@@ -150,12 +179,18 @@ JE fica_um
 JMP fica_zero
 fica_um:
 MOVC REG_14 $1
-JMP zero
+JMP restore
 fica_zero:
 MOVC REG_14 $0
-zero:
+restore:
+CMP REG_V1 REG_AP
+JE nzerar
 MOVC REG_DH $0
 MOVC REG_UH $0
+JMP linha_store
+nzerar:
+MOVC REG_DH $0
+MOVC REG_UH $1
 linha_store:
 STORE REG_US LCD_US
 STORE REG_DS LCD_DS
