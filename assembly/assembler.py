@@ -121,7 +121,7 @@ mem_address_dict = {
 	'LIMPA_BASE_TEMPO_N': '0000001010',
 	'LED':		  '0000001100',
 	'SW0':		   '0000000111',
-	'SW1':		   '0000001000',
+	'SW':		   '0000001000',
 	'LCD_US':      '0000000000',
 	'LCD_DS':      '0000000001',
 	'LCD_UM':      '0000000010',
@@ -138,7 +138,7 @@ with open('assembly.asm', 'r') as infile:
 	#adicionando o cabecalho necessario ao arquivo .mif para ser usado pela ROM
 	fin = open("binario.mif", "wt")
 	fin.write("WIDTH=26;\n")
-	fin.write("DEPTH=220;\n")
+	fin.write("DEPTH=320;\n")
 	fin.write("ADDRESS_RADIX=DEC;\n")
 	fin.write("DATA_RADIX=BIN; \n")
 	fin.write("CONTENT BEGIN\n")

@@ -1,5 +1,5 @@
 Archive Project report for aula8
-Sun Oct 18 23:17:49 2020
+Fri Oct 23 20:31:25 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------+
 ; Archive Project Summary                                        ;
 +------------------------+---------------------------------------+
-; Archive Project Status ; Successful - Sun Oct 18 23:17:49 2020 ;
+; Archive Project Status ; Successful - Fri Oct 23 20:31:25 2020 ;
 ; Revision Name          ; aula8                                 ;
 ; Top-level Entity Name  ; Relogio                               ;
 ; Family                 ; Cyclone V                             ;
@@ -51,53 +51,57 @@ Info: File Set 'Source control' contains:
     Info: Automatically detected source files
 Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
 Info: Archive will store files relative to the closest common parent directory
-Info (13213): Using common directory C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/
+Info (13213): Using common directory C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
-Info: Generated archive 'C:/Users/Mayra Peter/Documents/6 SEMESTRE/Design/RelogioDesign/arquivos_vhdl/relogio_final.qar'
+Info: Generated archive 'C:/Users/giova/OneDrive/Documentos/Insper/6_semestre/DesignComp/RelogioDesign/arquivos_vhdl/relogio_com_opicionais.qar'
 Info: ----------------------------------------------------------
 Info: ----------------------------------------------------------
 Info: Generated report 'aula8.archive.rpt'
 Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
 Info: Quartus Prime Shell was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4737 megabytes
-    Info: Processing ended: Sun Oct 18 23:17:49 2020
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Fri Oct 23 20:31:25 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
-+---------------------------------+
-; Files Archived                  ;
-+---------------------------------+
-; File Name                       ;
-+---------------------------------+
-; assignment_defaults.qdf         ;
-; aula8.qpf                       ;
-; aula8.qsf                       ;
-; aula8.vhd                       ;
-; bancoRegistradoresArqRegReg.vhd ;
-; conversorHex7Seg.vhd            ;
-; Decoder.vhd                     ;
-; decodificador2x4.vhd            ;
-; divisorGenerico.vhd             ;
-; divisorGenerico_e_Interface.vhd ;
-; flipflop.vhd                    ;
-; Fluxo_Dados.vhd                 ;
-; interface_botoes.vhd            ;
-; interface_chaves.vhd            ;
-; memoriaRAM.vhd                  ;
-; memoriaROM.vhd                  ;
-; mux.vhd                         ;
-; muxGenerico2x1.vhd              ;
-; output_files/Waveform.vwf       ;
-; Processador.vhd                 ;
-; registradorGenerico.vhd         ;
-; Relogio.vhd                     ;
-; somaConstante.vhd               ;
-; ULA.vhdl                        ;
-; Unidade_Controle.vhd            ;
-; Waveform.vwf                    ;
-; Waveform1.vwf                   ;
-+---------------------------------+
++---------------------------------------+
+; Files Archived                        ;
++---------------------------------------+
+; File Name                             ;
++---------------------------------------+
+; assignment_defaults.qdf               ;
+; aula8.qpf                             ;
+; aula8.qsf                             ;
+; aula8.vhd                             ;
+; bancoRegistradoresArqRegReg.vhd       ;
+; conversorHex7Seg.vhd                  ;
+; Decoder.vhd                           ;
+; decodificador2x4.vhd                  ;
+; divisorGenerico.vhd                   ;
+; divisorGenerico_e_Interface.vhd       ;
+; divisorGenerico_e_Interface_Paulo.vhd ;
+; flipflop.vhd                          ;
+; Fluxo_Dados.vhd                       ;
+; interface_botoes.vhd                  ;
+; interface_chaves.vhd                  ;
+; interface_chavesSW0.vhd               ;
+; interface_chavesSW1.vhd               ;
+; interface_leds.vhd                    ;
+; memoriaRAM.vhd                        ;
+; memoriaROM.vhd                        ;
+; mux.vhd                               ;
+; muxGenerico2x1.vhd                    ;
+; output_files/Waveform.vwf             ;
+; Processador.vhd                       ;
+; registradorGenerico.vhd               ;
+; Relogio.vhd                           ;
+; simulation/Waveform.vwf               ;
+; somaConstante.vhd                     ;
+; ULA.vhdl                              ;
+; Unidade_Controle.vhd                  ;
+; Waveform.vwf                          ;
++---------------------------------------+
 
 

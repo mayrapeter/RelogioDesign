@@ -1,5 +1,5 @@
 Flow report for aula8
-Fri Oct 23 15:13:41 2020
+Fri Oct 23 20:33:51 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Oct 23 15:13:41 2020       ;
+; Flow Status                     ; Successful - Fri Oct 23 20:33:51 2020       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; aula8                                       ;
 ; Top-level Entity Name           ; Relogio                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 292 / 18,480 ( 2 % )                        ;
-; Total registers                 ; 252                                         ;
+; Logic utilization (in ALMs)     ; 327 / 18,480 ( 2 % )                        ;
+; Total registers                 ; 254                                         ;
 ; Total pins                      ; 65 / 224 ( 29 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/23/2020 15:12:22 ;
+; Start date & time ; 10/23/2020 20:31:31 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; aula8               ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                                                ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+------------------------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 266554459343968.160347674219392                                                                      ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 266554459343968.160349589120100                                                                      ; --            ; --          ; --             ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; C:\Users\duda\Documents\Insper\6-semestre\Design_comp\Relogio\RelogioDesign\arquivos_vhdl\simulation ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                                                                 ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                                                                               ; <None>        ; --          ; --             ;
@@ -104,12 +104,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4874 MB             ; 00:00:34                           ;
-; Fitter               ; 00:00:43     ; 1.1                     ; 6270 MB             ; 00:01:20                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4822 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:09     ; 1.3                     ; 5080 MB             ; 00:00:10                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4720 MB             ; 00:00:02                           ;
-; Total                ; 00:01:12     ; --                      ; --                  ; 00:02:11                           ;
+; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 4866 MB             ; 00:00:53                           ;
+; Fitter               ; 00:01:20     ; 1.1                     ; 6268 MB             ; 00:02:23                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4826 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:15     ; 1.2                     ; 5079 MB             ; 00:00:16                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4721 MB             ; 00:00:02                           ;
+; Total                ; 00:02:11     ; --                      ; --                  ; 00:03:40                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

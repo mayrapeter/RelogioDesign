@@ -8,13 +8,22 @@ MOVC REG_DH $0
 MOVC REG_14 $0
 JMP linha_store
 linha_while:
-MOVC REG_15 $2
+MOVC REG_15 $8
 MOVC REG_11 $0
-LOAD REG_11 SW1
+LOAD REG_11 SW
+CMP REG_11 REG_15
+JE temporizador
+MOVC REG_15 $9
+MOVC REG_11 $0
+LOAD REG_11 SW
+CMP REG_11 REG_15
+JE temporapidor
+MOVC REG_15 $2
+LOAD REG_11 SW
 CMP REG_11 REG_15
 JE pause
 MOVC REG_15 $6
-LOAD REG_11 SW1
+LOAD REG_11 SW
 CMP REG_11 REG_15
 JE pause
 MOVC REG_15 $3
@@ -25,7 +34,7 @@ CMP REG_11 REG_15
 JE pause
 MOVC REG_V1 $1
 STORE REG_14 LED
-LOAD REG_11 SW1
+LOAD REG_11 SW
 CMP REG_11 REG_V1
 JE bt_rapida
 MOVC REG_15 $5
@@ -45,7 +54,7 @@ JMP linha_while
 passou_um_segundo: 
 MOVC REG_9 $6
 MOVC REG_10 $10
-LOAD REG_11 SW1
+LOAD REG_11 SW
 MOVC REG_15 $5
 CMP REG_11 REG_15   
 JE meio_periodo  
@@ -183,6 +192,7 @@ JMP restore
 fica_zero:
 MOVC REG_14 $0
 restore:
+MOVC REG_V1 $1
 CMP REG_V1 REG_AP
 JE nzerar
 MOVC REG_DH $0
@@ -219,7 +229,7 @@ CMP REG_15 REG_V1
 JE checa_soltou_key2
 MOVC REG_15 $2
 MOVC REG_11 $0
-LOAD REG_11 SW1
+LOAD REG_11 SW
 CMP REG_11 REG_15
 JE pause
 MOVC REG_15 $3
@@ -241,3 +251,76 @@ LOAD REG_15 KEY
 CMP REG_15 REG_V1
 JE adiciona_hora
 JMP but2
+temporizador:
+MOVC REG_V1 $1
+LOAD REG_BT LE_BASE_TEMPO_N
+CMP REG_BT REG_V1
+JE umsegundo
+JMP temporizador
+temporapidor:
+LOAD REG_BT LE_BASE_TEMPO_R
+CMP REG_BT REG_V1
+JE umsegundo
+JMP temporapidor
+umsegundo:
+MOVC REG_V1 $1 
+MOVC REG_15 $0
+MOVC REG_V1 $1                                                    
+CMP REG_15 REG_US   
+JE segundouzerado
+JMP segundounao
+segundouzerado:
+CMP REG_15 REG_DS
+JE segundodzerado
+JMP segundodnao
+segundounao:
+MOVC REG_V1 $1
+SUB REG_13 REG_US REG_V1 
+MOVR REG_US REG_13
+JMP linha_store
+segundodzerado:
+CMP REG_15 REG_UM
+JE minutouzerado
+JMP minutounao
+segundodnao:
+MOVC REG_US $9
+MOVC REG_V1 $1
+SUB REG_13 REG_DS REG_V1 
+MOVR REG_DS REG_13
+JMP linha_store
+minutouzerado:
+CMP REG_15 REG_DM
+JE minutodzerado
+JMP minutodnao
+minutounao:
+MOVC REG_DS $5
+MOVC REG_V1 $1
+SUB REG_13 REG_UM REG_V1 
+MOVR REG_UM REG_13
+JMP linha_store
+minutodzerado:
+CMP REG_15 REG_UH
+JE horauzerada
+JMP horaunao
+minutodnao:
+MOVC REG_UM $9
+MOVC REG_V1 $1
+SUB REG_13 REG_DM REG_V1 
+MOVR REG_DM REG_13
+JMP linha_store
+horauzerada:
+CMP REG_15 REG_DH
+JE linha_store
+JMP horadnao
+horaunao:
+MOVC REG_DM $5
+MOVC REG_V1 $1
+SUB REG_13 REG_UH REG_V1 
+MOVR REG_UH REG_13
+JMP linha_store
+horadnao:
+MOVC REG_UH $9
+MOVC REG_V1 $1
+SUB REG_13 REG_DH REG_V1 
+MOVR REG_DH REG_13
+JMP linha_store
